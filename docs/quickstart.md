@@ -1,7 +1,5 @@
-# Quickstart details
+# Quickstart
 
-The root README contains the executable synthetic example. Install both distributions in one dependency-resolution transaction. The pinned scoring-core dependency is not silently redirected to an unrelated package on an index. Build artifacts are separate from private source data and environment caches.
+Use the [verified public Release quickstart](../README.md#install-the-public-prerelease). It downloads both packages and a fixed-tag synthetic generator anonymously, checks SHA256, installs both wheels together in a new environment, and runs Provided annotations through Both/Original/Expanded scoring, QC, continuous coupling, seed details and score replay. No Atlas download is needed.
 
-The synthetic generator supplies a complete configuration rather than relying on an implicit atlas or annotation model. The table of provided labels is deliberately shuffled to exercise exact cell-ID joining. Two score definitions are generated independently; replay consumes their exported provenance and detection evidence.
-
-For your own data, keep the complete native measured gene background, provide the matching metadata table, and edit only the documented configuration fields. A successful software run can contain non-evaluable programs and associations. Read `run_qc.json`, coverage, detected seeds, and eligible denominators before interpreting scores.
+The release-source commit is `61880256cd085296c38f04b05cdc34875fdbbde7`. These documentation updates on main preserve that fixed tag and its tested assets. See [output schemas](output_schema.md), [input schema](input_schema.md), and [QC/limitations](qc_and_limitations.md) before using your own H5AD.

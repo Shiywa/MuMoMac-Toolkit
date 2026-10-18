@@ -1,9 +1,12 @@
 cff-version: 1.2.0
-message: "Cite the actual public tag and commit after publication. This MIT code candidate is not yet an online release; no DOI is available."
+message: "Please cite the fixed MuMoMac Toolkit 0.1.1rc1 release. The release URL and author metadata are provided below; no DOI is assigned."
 title: "MuMoMac Toolkit: layered macrophage transcriptional feature scoring and continuous coupling"
 type: software
 version: 0.1.1rc1
 authors:
   - family-names: "Wang"
     given-names: "Shiyou"
-abstract: "Research workflow 0.1.1rc1 with scoring core 0.3.0 and frozen Reference 1.0.0. MIT project code; separately documented lightweight Reference and mapping terms. Public hosting and CI are pending."
+abstract: "Research workflow 0.1.1rc1 with scoring core 0.3.0 and frozen Reference 1.0.0. MIT project code; separately documented lightweight Reference and mapping terms. Public hosting, CI, and anonymous fresh installation are verified."
+repository-code: "https://github.com/Shiywa/MuMoMac-Toolkit"
+url: "https://github.com/Shiywa/MuMoMac-Toolkit/releases/tag/v0.1.1rc1"
+date-released: '2026-10-18'

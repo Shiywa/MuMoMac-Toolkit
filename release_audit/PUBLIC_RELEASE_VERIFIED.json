@@ -1,0 +1,60 @@
+{
+  "release_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/tag/v0.1.1rc1",
+  "repo_url": "https://github.com/Shiywa/MuMoMac-Toolkit",
+  "tag": "v0.1.1rc1",
+  "software_source_commit": "61880256cd085296c38f04b05cdc34875fdbbde7",
+  "published_at": "2026-10-18T13:12:04Z",
+  "CI_url": "https://github.com/Shiywa/MuMoMac-Toolkit/actions/runs/39130124445",
+  "CI_conclusion": "success",
+  "anonymous_public_install": "PASS",
+  "assets": [
+    {
+      "name": "RELEASE_NOTES.md",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/RELEASE_NOTES.md",
+      "bytes": 2422,
+      "sha256": "4bb0214c9a959fec6983af15b3eb44aa19a9bfa52907a3fd58d3637281c2e6d2",
+      "local_online_match": true
+    },
+    {
+      "name": "mumomac_toolkit-0.3.0.tar.gz",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_toolkit-0.3.0.tar.gz",
+      "bytes": 91382,
+      "sha256": "117e098b36a7df9c576c71aa7014e3f744dfcb376979efdb004b43a8a681eb44",
+      "local_online_match": true
+    },
+    {
+      "name": "mumomac_experimental-0.1.1rc1-py3-none-any.whl",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_experimental-0.1.1rc1-py3-none-any.whl",
+      "bytes": 142824,
+      "sha256": "9c73e3d39e41f3c9a91efef69a8930eeb44048ddb86822e62fabd390ff34f31f",
+      "local_online_match": true
+    },
+    {
+      "name": "mumomac_toolkit-0.3.0-py3-none-any.whl",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_toolkit-0.3.0-py3-none-any.whl",
+      "bytes": 103690,
+      "sha256": "c03aee7f51b7fe8952f1df35218d271bf4303a2e6f81e5228966a7b14957eead",
+      "local_online_match": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/SHA256SUMS",
+      "bytes": 416,
+      "sha256": "4a3ed3aa679645ef5cdb3b88cde20aec5a33f3b2ec6b657345ac5a677d0d1001",
+      "local_online_match": true
+    },
+    {
+      "name": "mumomac_experimental-0.1.1rc1.tar.gz",
+      "public_url": "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_experimental-0.1.1rc1.tar.gz",
+      "bytes": 158363,
+      "sha256": "7826b16b583b2a958892d98cfa8178ae7af9db433646a0ead871704bed5df755",
+      "local_online_match": true
+    }
+  ],
+  "frozen_registry_sha256": "2c3ff81f43010caf11251053ec676d7d03ded3f941b9ac1660d836b5beeee515",
+  "code_license": "MIT",
+  "copyright": "2026 Shiyou Wang",
+  "Atlas_included": false,
+  "biological_validation": false,
+  "scope": "Engineering acceptance of a public prerelease, not independent biological validation; subsequent documentation updates do not retag the software"
+}

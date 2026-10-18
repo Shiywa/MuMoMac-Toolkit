@@ -2,15 +2,58 @@
 
 MuMoMac profiles 22 layered macrophage transcriptional features from user-supplied H5AD expression and explicit monocyte/macrophage annotations. The workflow exports versioned scores, measured-gene and per-cell detection QC, and continuous program associations within sample/identity groups.
 
-**Public-release candidate: workflow 0.1.1rc1, scoring core 0.3.0, Reference 1.0.0. Project-authored software is MIT-licensed, copyright 2026 Shiyou Wang. Required lightweight resources have separate scope and upstream notices. Online repository publication, GitHub CI, and anonymous Release installation have not yet been completed.**
+**[Public prerelease 0.1.1rc1](https://github.com/Shiywa/MuMoMac-Toolkit/releases/tag/v0.1.1rc1), published 2026-10-18: scoring core 0.3.0 and Reference 1.0.0. MIT project software, copyright 2026 Shiyou Wang; lightweight resources retain separate scope and upstream notices. GitHub CI and anonymous fresh-install acceptance passed.**
 
 The reference has 16 S functional transcriptional programs, five L lifecycle/residence-associated features, and continuous A01. Original contains 229 memberships/229 distinct genes. Current Expanded contains 820 memberships/715 distinct genes. Current Expanded22 is separate from the historical 601-gene expansion.
 
-## Installation and quickstart
+## Install the public prerelease
+
+Use Python 3.11 on Ubuntu. Download both packages' wheels, their source distributions, checksums, and the fixed-tag synthetic example into a new directory outside any source checkout. The following downloader was executed anonymously and its outputs matched the published hashes:
+
+```bash
+mkdir mumomac-0.1.1rc1-work
+cd mumomac-0.1.1rc1-work
+python3.11 - <<'PY'
+from urllib.request import urlretrieve
+
+release = "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1"
+files = [
+    "mumomac_toolkit-0.3.0-py3-none-any.whl",
+    "mumomac_experimental-0.1.1rc1-py3-none-any.whl",
+    "mumomac_toolkit-0.3.0.tar.gz",
+    "mumomac_experimental-0.1.1rc1.tar.gz",
+    "SHA256SUMS",
+]
+for name in files:
+    urlretrieve(f"{release}/{name}", name)
+urlretrieve(
+    "https://raw.githubusercontent.com/Shiywa/MuMoMac-Toolkit/v0.1.1rc1/examples/make_synthetic_example.py",
+    "make_synthetic_example.py",
+)
+PY
+sha256sum --check SHA256SUMS
+python3.11 -m venv venv
+venv/bin/python -m pip --isolated install --index-url https://pypi.org/simple mumomac_toolkit-0.3.0-py3-none-any.whl mumomac_experimental-0.1.1rc1-py3-none-any.whl
+venv/bin/python -m pip check
+venv/bin/python make_synthetic_example.py --output example-data
+venv/bin/mumomac-experimental --help
+venv/bin/mumomac-experimental analyze --help
+venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
+venv/bin/mumomac-experimental seed-details --run example-results --cell-id SYN0000 --program-id S03
+venv/bin/mumomac-experimental score-run --input-run example-results --output replay-results
+venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version original --output original-results
+venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version expanded --output expanded-results
+```
+
+The two wheel filenames belong in the same pip call. MuMoMac itself is distributed through this GitHub Release; the index supplies external dependencies. No Atlas download is required. The synthetic input has 256 artificial profiles and 795 native genes; Provided labels select 240 targets. Structured scores and QC are in `example-results/original/` and `example-results/expanded/`; root tables preserve version-prefixed score namespaces. `SYN0000` has insufficient Original S03 detection and correctly retains NA. Missing Joint/Lift/OR values do not mean a joint population is absent.
+
+Fresh wheel and sdist installs, the complete anonymous public-asset run, and [GitHub CI](https://github.com/Shiywa/MuMoMac-Toolkit/actions/runs/39130124445) passed. The Ubuntu 24.04/Python 3.11 CI and local Ubuntu 20.04/Python 3.11 checks do not certify Windows, macOS, or million-cell operation. The [public verification summary](release_audit/PUBLIC_RELEASE_VERIFIED.json) records the release-source commit and asset hashes.
+
+## Build from source
 
 The candidate consists of two distributions released together: `mumomac-toolkit==0.3.0` in `core/`, and `mumomac-experimental==0.1.1rc1` at the repository root. Both must be installed. The workflow's dependency on the core is exact; no local private wheel path is required. The tested environment and real install outcomes are recorded in `release_audit/INSTALLATION_STATUS.md`.
 
-The tested platform is Python 3.11 on Ubuntu 20.04 x86_64; CI is configured for Ubuntu 24.04/Python 3.11 and awaits an actual run. For this local candidate, build both distributions, then install both wheels into a fresh environment. Start inside the candidate source directory:
+The tested platform is Python 3.11 on Ubuntu 20.04 x86_64; CI passed on Ubuntu 24.04/Python 3.11. For this local candidate, build both distributions, then install both wheels into a fresh environment. Start inside the candidate source directory:
 
 ```bash
 MUMOMAC_SOURCE_DIR="$PWD"
@@ -39,7 +82,7 @@ The preceding commands set the script/environment paths and move outside the sou
 
 The `mumomac-experimental` executable installed in the environment provides the same CLI. To run one definition independently, change `--signature-version` to `original` or `expanded` and use a new output directory. Existing nonempty output directories are refused; failed runs are retained.
 
-No GitHub tag or Release wheel URL is shown as a working installation source until that tag and its anonymous downloads have actually been created and tested. A source checkout or ZIP alone does not replace the wheel/sdist installation checks. PyPI, Conda, and BioConda publication are outside this release.
+The fixed public Release and anonymous installation are verified above. A source checkout or ZIP alone does not replace the wheel/sdist checks. PyPI, Conda, and BioConda publication are outside this release.
 
 ## Inputs and results
 
@@ -63,4 +106,4 @@ Scientific gene sets, mapping tables, score mathematics, and frozen inference en
 
 Human provenance compatibility requires attention: the inherited adapter includes the complete `signatures_manifest.json` and `reference_version_manifest.json` in its mapping digest. Source-path sanitization and current publication-rights metadata therefore change the human provenance digest, even though mapping tables, program members, scores, and NA masks are preserved. Historical human score-run specifications cannot be assumed hash-identical to this candidate. The legacy S-mapping database release remains unknown. See [third-party notices](THIRD_PARTY_NOTICES.md) for source attribution.
 
-Use `CITATION.cff` for author/version metadata and cite the actual fixed tag and commit after publication. No manuscript publication, public release date, public commit URL, or Zenodo DOI is asserted before it exists. Earlier audit files describe the previous staging checkpoint; final online evidence will be recorded separately after an actual release.
+Cite Shiyou Wang, MuMoMac Toolkit 0.1.1rc1, [fixed release](https://github.com/Shiywa/MuMoMac-Toolkit/releases/tag/v0.1.1rc1) and [software source commit](https://github.com/Shiywa/MuMoMac-Toolkit/commit/61880256cd085296c38f04b05cdc34875fdbbde7). `CITATION.cff` supplies editable author/version metadata. No Zenodo DOI is assigned. The released archives retain that fixed source snapshot; subsequent documentation updates on main do not move the release tag or replace its assets. Earlier audit files describe their labeled historical staging checkpoint.
