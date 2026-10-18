@@ -1,0 +1,5 @@
+# MuMoMac Toolkit public prerelease v0.1.1rc1
+# Both distributions are required. Dependencies are resolved from PyPI.
+# URL fragments verify each published wheel against its frozen SHA256.
+https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_toolkit-0.3.0-py3-none-any.whl#sha256=c03aee7f51b7fe8952f1df35218d271bf4303a2e6f81e5228966a7b14957eead
+https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1/mumomac_experimental-0.1.1rc1-py3-none-any.whl#sha256=9c73e3d39e41f3c9a91efef69a8930eeb44048ddb86822e62fabd390ff34f31f

@@ -6,6 +6,26 @@ on:
 permissions:
   contents: read
 jobs:
+  public-release-install:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Install published wheels from the public manifest
+        run: |
+          python -m venv "$RUNNER_TEMP/mumomac-public"
+          "$RUNNER_TEMP/mumomac-public/bin/python" -m pip --isolated install --index-url https://pypi.org/simple -r requirements-release.txt
+          "$RUNNER_TEMP/mumomac-public/bin/python" -m pip check
+      - name: Run the published workflow outside the checkout
+        run: |
+          mkdir -p "$RUNNER_TEMP/mumomac-public-external"
+          cd "$RUNNER_TEMP/mumomac-public-external"
+          "$RUNNER_TEMP/mumomac-public/bin/mumomac" --help
+          "$RUNNER_TEMP/mumomac-public/bin/mumomac-experimental" --help
+          "$RUNNER_TEMP/mumomac-public/bin/python" "$GITHUB_WORKSPACE/examples/make_synthetic_example.py" --output data
+          "$RUNNER_TEMP/mumomac-public/bin/mumomac-experimental" analyze --input data/synthetic_counts.h5ad --metadata data/provided_metadata.tsv --config data/config.yaml --signature-version both --output results
   linux-python311:
     runs-on: ubuntu-24.04
     steps:

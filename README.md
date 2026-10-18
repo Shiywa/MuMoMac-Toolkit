@@ -8,81 +8,31 @@ The reference has 16 S functional transcriptional programs, five L lifecycle/res
 
 ## Install the public prerelease
 
-Use Python 3.11 on Ubuntu. Download both packages' wheels, their source distributions, checksums, and the fixed-tag synthetic example into a new directory outside any source checkout. The following downloader was executed anonymously and its outputs matched the published hashes:
+Use Python 3.11 on Ubuntu. In your Python environment, run one command:
 
 ```bash
-mkdir mumomac-0.1.1rc1-work
-cd mumomac-0.1.1rc1-work
-python3.11 - <<'PY'
-from urllib.request import urlretrieve
-
-release = "https://github.com/Shiywa/MuMoMac-Toolkit/releases/download/v0.1.1rc1"
-files = [
-    "mumomac_toolkit-0.3.0-py3-none-any.whl",
-    "mumomac_experimental-0.1.1rc1-py3-none-any.whl",
-    "mumomac_toolkit-0.3.0.tar.gz",
-    "mumomac_experimental-0.1.1rc1.tar.gz",
-    "SHA256SUMS",
-]
-for name in files:
-    urlretrieve(f"{release}/{name}", name)
-urlretrieve(
-    "https://raw.githubusercontent.com/Shiywa/MuMoMac-Toolkit/v0.1.1rc1/examples/make_synthetic_example.py",
-    "make_synthetic_example.py",
-)
-PY
-sha256sum --check SHA256SUMS
-python3.11 -m venv venv
-venv/bin/python -m pip --isolated install --index-url https://pypi.org/simple mumomac_toolkit-0.3.0-py3-none-any.whl mumomac_experimental-0.1.1rc1-py3-none-any.whl
-venv/bin/python -m pip check
-venv/bin/python make_synthetic_example.py --output example-data
-venv/bin/mumomac-experimental --help
-venv/bin/mumomac-experimental analyze --help
-venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
-venv/bin/mumomac-experimental seed-details --run example-results --cell-id SYN0000 --program-id S03
-venv/bin/mumomac-experimental score-run --input-run example-results --output replay-results
-venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version original --output original-results
-venv/bin/mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version expanded --output expanded-results
+python -m pip install -r https://raw.githubusercontent.com/Shiywa/MuMoMac-Toolkit/main/requirements-release.txt
 ```
 
-The two wheel filenames belong in the same pip call. MuMoMac itself is distributed through this GitHub Release; the index supplies external dependencies. No Atlas download is required. The synthetic input has 256 artificial profiles and 795 native genes; Provided labels select 240 targets. Structured scores and QC are in `example-results/original/` and `example-results/expanded/`; root tables preserve version-prefixed score namespaces. `SYN0000` has insufficient Original S03 detection and correctly retains NA. Missing Joint/Lift/OR values do not mean a joint population is absent.
+Pip downloads and installs both required packages from the public `v0.1.1rc1` Release, verifies their published SHA256 hashes, and installs external dependencies from PyPI. No manual package download, GitHub login, Git executable, or Atlas download is required. For installation directly from a fixed GitHub tag, a local source checkout, or manual artifact verification, see [installation details](docs/installation.md).
 
-Fresh wheel and sdist installs, the complete anonymous public-asset run, and [GitHub CI](https://github.com/Shiywa/MuMoMac-Toolkit/actions/runs/39130124445) passed. The Ubuntu 24.04/Python 3.11 CI and local Ubuntu 20.04/Python 3.11 checks do not certify Windows, macOS, or million-cell operation. The [public verification summary](release_audit/PUBLIC_RELEASE_VERIFIED.json) records the release-source commit and asset hashes.
+To create a separate environment first, run `python3.11 -m venv .venv` and `source .venv/bin/activate`, then run the install command above. The project has not been published to PyPI; use the public requirements URL shown here.
 
-## Build from source
+## Quickstart
 
-The candidate consists of two distributions released together: `mumomac-toolkit==0.3.0` in `core/`, and `mumomac-experimental==0.1.1rc1` at the repository root. Both must be installed. The workflow's dependency on the core is exact; no local private wheel path is required. The tested environment and real install outcomes are recorded in `release_audit/INSTALLATION_STATUS.md`.
-
-The tested platform is Python 3.11 on Ubuntu 20.04 x86_64; CI passed on Ubuntu 24.04/Python 3.11. For this local candidate, build both distributions, then install both wheels into a fresh environment. Start inside the candidate source directory:
+Download the synthetic example generator from the fixed release tag and run the workflow:
 
 ```bash
-MUMOMAC_SOURCE_DIR="$PWD"
-python3.11 -m venv ../mumomac-build-env
-../mumomac-build-env/bin/python -m pip install --index-url https://pypi.org/simple build 'setuptools>=77' wheel
-../mumomac-build-env/bin/python -m build --outdir dist core
-../mumomac-build-env/bin/python -m build --outdir dist .
-python3.11 -m venv ../mumomac-run-env
-../mumomac-run-env/bin/python -m pip install --index-url https://pypi.org/simple dist/mumomac_toolkit-0.3.0-py3-none-any.whl dist/mumomac_experimental-0.1.1rc1-py3-none-any.whl
-MUMOMAC_PYTHON="$MUMOMAC_SOURCE_DIR/../mumomac-run-env/bin/python"
-MUMOMAC_EXAMPLE_SCRIPT="$MUMOMAC_SOURCE_DIR/examples/make_synthetic_example.py"
-mkdir ../mumomac-example-work
-cd ../mumomac-example-work
+curl -fL https://raw.githubusercontent.com/Shiywa/MuMoMac-Toolkit/v0.1.1rc1/examples/make_synthetic_example.py -o make_synthetic_example.py
+python make_synthetic_example.py --output example-data
+mumomac-experimental analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
 ```
 
-The preceding commands set the script/environment paths and move outside the source tree. Continue in that working directory:
+Check the installation with `python -m pip check` or view available commands with `mumomac-experimental --help`. See [the complete quickstart](docs/quickstart.md) for seed details, replay, and separate Original/Expanded runs.
 
-```bash
-"$MUMOMAC_PYTHON" "$MUMOMAC_EXAMPLE_SCRIPT" --output example-data
-"$MUMOMAC_PYTHON" -m mumomac_experimental.cli --help
-"$MUMOMAC_PYTHON" -m mumomac_experimental.cli analyze --help
-"$MUMOMAC_PYTHON" -m mumomac_experimental.cli analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
-"$MUMOMAC_PYTHON" -m mumomac_experimental.cli seed-details --run example-results --cell-id SYN0000 --program-id S03
-"$MUMOMAC_PYTHON" -m mumomac_experimental.cli score-run --input-run example-results --output replay-results
-```
+The synthetic input has 256 artificial profiles and 795 native genes; Provided labels select 240 targets. Scores and QC are in `example-results/original/` and `example-results/expanded/`; root tables preserve version-prefixed score namespaces. `SYN0000` has insufficient Original S03 detection and correctly retains NA. Missing Joint/Lift/OR values do not mean a joint population is absent.
 
-The `mumomac-experimental` executable installed in the environment provides the same CLI. To run one definition independently, change `--signature-version` to `original` or `expanded` and use a new output directory. Existing nonempty output directories are refused; failed runs are retained.
-
-The fixed public Release and anonymous installation are verified above. A source checkout or ZIP alone does not replace the wheel/sdist checks. PyPI, Conda, and BioConda publication are outside this release.
+The tested platforms are Python 3.11 on Ubuntu 20.04 and Ubuntu 24.04. Windows, macOS, and million-cell operation are not certified. The [public verification summary](release_audit/PUBLIC_RELEASE_VERIFIED.json) records the fixed software release and asset hashes; [GitHub Actions](https://github.com/Shiywa/MuMoMac-Toolkit/actions/workflows/ci.yml) checks builds, clean installs, and synthetic scoring.
 
 ## Inputs and results
 

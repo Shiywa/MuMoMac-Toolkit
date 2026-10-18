@@ -1,5 +1,9 @@
 # Changelog
 
+## Simplified public installation — October 18, 2026
+
+Added a public requirements manifest that installs both fixed release wheels in one pip command and verifies their SHA256 hashes. The README now starts with this install command and a short synthetic quickstart. Fixed-tag GitHub installation and manual artifact auditing are documented separately. Scientific code, Reference resources, package versions, the release tag, and release assets are unchanged.
+
 ## Public verification and documentation — October 18, 2026
 
 Published `v0.1.1rc1` from source commit `61880256cd085296c38f04b05cdc34875fdbbde7` after successful GitHub CI. Anonymous downloads, a new virtual environment, the full synthetic quickstart, exact outputs, and asset hashes passed. The verified public download instructions and citation metadata were then added on main without moving the software tag or replacing release assets.
