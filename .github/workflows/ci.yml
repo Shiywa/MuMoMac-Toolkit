@@ -32,10 +32,14 @@ jobs:
           mkdir -p "$RUNNER_TEMP/mumomac-external"
           cd "$RUNNER_TEMP/mumomac-external"
           "$RUNNER_TEMP/mumomac-run/bin/python" "$GITHUB_WORKSPACE/examples/make_synthetic_example.py" --output example-data
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac" --help
           "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" --help
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" analyze --help
           "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
           "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" seed-details --run example-results --cell-id SYN0000 --program-id S03
           "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" score-run --input-run example-results --output replay-results
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version original --output original-results
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version expanded --output expanded-results
       - name: Install source distributions into a second fresh environment
         run: |
           python -m venv "$RUNNER_TEMP/mumomac-sdist"

@@ -1,5 +1,9 @@
 # Changelog
 
+## Publication packaging revision — October 18, 2026
+
+MIT project software approved with copyright holder Shiyou Wang. Lightweight Reference scope and upstream mapping notices are separate. Code/license metadata and publication-rights statements are updated, CI is named `ci.yml`, and a combined QC guide is added. Frozen scientific code, members, thresholds, registry, and maps are unchanged. Online publication, CI, and anonymous public installation are still pending.
+
 The staged packaging revision sanitizes private source-path provenance without changing scoring code or Reference members. Human mapping digests include the sanitized manifest and therefore differ from the private-source digest; numerical/NA parity is assessed separately. No human score-run hash compatibility is inferred.
 
 ## 0.1.1rc1 public-release candidate staging

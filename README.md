@@ -2,7 +2,7 @@
 
 MuMoMac profiles 22 layered macrophage transcriptional features from user-supplied H5AD expression and explicit monocyte/macrophage annotations. The workflow exports versioned scores, measured-gene and per-cell detection QC, and continuous program associations within sample/identity groups.
 
-**Staged prerelease candidate: workflow 0.1.1rc1, scoring core 0.3.0, Reference 1.0.0. This repository has not been publicly released. Code-license and Reference/mapping redistribution approval are pending. No public download or CI-success badge is asserted.**
+**Public-release candidate: workflow 0.1.1rc1, scoring core 0.3.0, Reference 1.0.0. Project-authored software is MIT-licensed, copyright 2026 Shiyou Wang. Required lightweight resources have separate scope and upstream notices. Online repository publication, GitHub CI, and anonymous Release installation have not yet been completed.**
 
 The reference has 16 S functional transcriptional programs, five L lifecycle/residence-associated features, and continuous A01. Original contains 229 memberships/229 distinct genes. Current Expanded contains 820 memberships/715 distinct genes. Current Expanded22 is separate from the historical 601-gene expansion.
 
@@ -10,7 +10,7 @@ The reference has 16 S functional transcriptional programs, five L lifecycle/res
 
 The candidate consists of two distributions released together: `mumomac-toolkit==0.3.0` in `core/`, and `mumomac-experimental==0.1.1rc1` at the repository root. Both must be installed. The workflow's dependency on the core is exact; no local private wheel path is required. The tested environment and real install outcomes are recorded in `release_audit/INSTALLATION_STATUS.md`.
 
-For the local staged candidate, build the two distributions, then install both wheels into a fresh environment. Start from the downloaded candidate directory and use Python 3.11:
+The tested platform is Python 3.11 on Ubuntu 20.04 x86_64; CI is configured for Ubuntu 24.04/Python 3.11 and awaits an actual run. For this local candidate, build both distributions, then install both wheels into a fresh environment. Start inside the candidate source directory:
 
 ```bash
 MUMOMAC_SOURCE_DIR="$PWD"
@@ -59,8 +59,8 @@ The four historical engineering inputs were already used during development and 
 
 ## Reference, citation, and rights
 
-Scientific gene sets, mapping tables, score mathematics, and frozen inference engines are preserved. Only non-scientific source-path provenance in two manifests is sanitized for distribution. The canonical Reference registry SHA256 and a file-by-file change map are recorded in the release audit. There is no author-approved public LICENSE yet; `INTERNAL_NOTICE.txt` retains the original restriction. Dependencies keep their own licenses and are installed from their original distributions.
+Scientific gene sets, mapping tables, score mathematics, and frozen inference engines are preserved. Only non-scientific source-path provenance and publication-rights fields in two manifests are updated for distribution. The canonical Reference registry SHA256 is `2c3ff81f43010caf11251053ec676d7d03ded3f941b9ac1660d836b5beeee515`. Project-authored software and documentation use the [MIT License](LICENSE), copyright 2026 Shiyou Wang. See [license scope](LICENSE_SCOPE.md), [Reference terms](REFERENCE_TERMS.md), and [third-party notices](THIRD_PARTY_NOTICES.md) for the separate resource permissions. Dependencies retain their own licenses and are installed from their original distributions. The Atlas is not included and its future hosting platform is undecided.
 
-Human provenance compatibility requires attention: the inherited adapter includes the complete `signatures_manifest.json` in its mapping digest. Sanitizing that file's private source paths therefore changes the human provenance digest, even though the mapping tables, program members, scores, and NA masks are preserved. Historical human score-run specifications cannot be assumed hash-identical to this candidate. The legacy S-mapping database release remains unknown. See [third-party notices](THIRD_PARTY_NOTICES.md) for upstream attribution and the remaining rights review.
+Human provenance compatibility requires attention: the inherited adapter includes the complete `signatures_manifest.json` and `reference_version_manifest.json` in its mapping digest. Source-path sanitization and current publication-rights metadata therefore change the human provenance digest, even though mapping tables, program members, scores, and NA masks are preserved. Historical human score-run specifications cannot be assumed hash-identical to this candidate. The legacy S-mapping database release remains unknown. See [third-party notices](THIRD_PARTY_NOTICES.md) for source attribution.
 
-Use `CITATION.cff` for the staged software metadata. No manuscript publication, public release date, repository commit URL, or Zenodo DOI is invented. These records must be completed after an actual public release.
+Use `CITATION.cff` for author/version metadata and cite the actual fixed tag and commit after publication. No manuscript publication, public release date, public commit URL, or Zenodo DOI is asserted before it exists. Earlier audit files describe the previous staging checkpoint; final online evidence will be recorded separately after an actual release.

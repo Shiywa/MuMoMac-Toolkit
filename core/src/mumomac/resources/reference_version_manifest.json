@@ -18,6 +18,6 @@
   "la_expanded_math": "uniform positive Full UCell from Phase4",
   "original_memberships": 229,
   "expanded_memberships": 820,
-  "public_release_license": "BLOCKED pending owner authorization and resource rights",
+  "public_release_license": "Author-approved lightweight Toolkit Reference inclusion; see REFERENCE_TERMS.md and THIRD_PARTY_NOTICES.md. MIT applies to project software only; no Atlas matrices included.",
   "created_date": "2026-10-14"
 }

@@ -8,8 +8,8 @@ version = "0.3.0"
 description = "Exploratory macrophage RNA program profiling with frozen MuMoMac signatures"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "LicenseRef-MuMoMac-Internal-Research"
-license-files = ["INTERNAL_NOTICE.txt", "THIRD_PARTY_NOTICES.md"]
+license = "MIT AND CC-BY-4.0 AND LicenseRef-MuMoMac-Reference-Redistribution"
+license-files = ["LICENSE", "LICENSE_SCOPE.md", "REFERENCE_TERMS.md", "THIRD_PARTY_NOTICES.md"]
 dependencies = ["anndata>=0.10", "numpy>=1.23", "scipy>=1.10", "pandas>=2.0", "pyucell==0.8.0"]
 
 [project.optional-dependencies]

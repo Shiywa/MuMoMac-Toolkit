@@ -1148,5 +1148,5 @@
     }
   },
   "scoring_distinction": "Original/Expanded are frozen definitions; v4 Atlas baseline/GMM is not portable UCell; Expanded portable uses0.5 Original+0.5 Added; no-added Original.",
-  "license_status": "Original signature selection/Atlas public redistribution rights not established by this MVP; internal research use only pending review."
+  "license_status": "Lightweight frozen program definitions approved for inclusion with MuMoMac Toolkit; see REFERENCE_TERMS.md. Third-party mapping data retain upstream terms. The Atlas and real matrices are excluded; project software is MIT-licensed."
 }

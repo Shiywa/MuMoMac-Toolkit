@@ -1,4 +1,6 @@
-# Installation status
+# Historical staging installation status
+
+This file records the pre-publication staging checkpoint. It does not certify the later licensed commit. Current MIT software approval and separate Reference/upstream scope supersede the historical pending-rights statement below. Final-commit builds/tests and online CI/public-download evidence are recorded separately in the final release audit; the historical counts are not relabeled as those new results.
 
 Local candidate checks passed on Ubuntu 20.04.6 x86_64, Python 3.11.15, with public PyPI dependencies. Core 0.3.0 and wrapper 0.1.1rc1 were built as separate wheels and source distributions and installed together in two fresh standard virtual environments. No editable install, project PYTHONPATH or system-site-packages were used. Imports resolved inside each virtual environment. `pip check`, CLI help, synthetic H5AD generation, Both/Original/Expanded analysis, seed details and score-run replay passed outside the checkout.
 

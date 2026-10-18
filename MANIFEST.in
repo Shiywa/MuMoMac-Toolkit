@@ -1,4 +1,4 @@
-include README.md INTERNAL_NOTICE.txt CITATION.cff CHANGELOG.md RELEASE_NOTES.md
+include README.md LICENSE LICENSE_SCOPE.md REFERENCE_TERMS.md CITATION.cff CHANGELOG.md RELEASE_NOTES.md
 include THIRD_PARTY_NOTICES.md
 recursive-include docs *.md
 recursive-include examples *.py *.md

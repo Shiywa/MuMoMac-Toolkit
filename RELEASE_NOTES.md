@@ -8,4 +8,4 @@ It does not certify all-cell automatic annotation, functional positivity, cross-
 
 The synthetic example tests implementation only. Existing real engineering inputs were previously exposed. Read the installation audit and test matrix for actual executed checks; CI and public anonymous installation remain unverified until run after authorized repository creation.
 
-Public-license selection, Reference/mapping redistribution rights, repository creation and final GitHub Actions/anonymous-download checks are release gates. No public release date, tag URL, commit URL, or DOI is asserted here.
+Project-authored software is MIT-licensed, copyright 2026 Shiyou Wang. Lightweight Reference redistribution is approved within the Toolkit scope; upstream MGI/Ensembl notices remain separate. The full Atlas and real matrices are excluded. Repository authentication/creation, actual GitHub Actions, and anonymous public downloads remain release gates. No public release date, tag URL, commit URL, or DOI is asserted here.

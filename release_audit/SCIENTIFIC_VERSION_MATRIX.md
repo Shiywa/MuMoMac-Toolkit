@@ -11,7 +11,7 @@
 | UCell implementation | official pyUCell 0.8.0 | Average ties, max rank 1500; no forked scorer |
 | Original Seed QC | `partial_seed3_v1` | Three measured and three detected seeds; invalid remains NA |
 | Continuous/state engines | C1/C2/C2.1 frozen payloads | Exact engine-file hashes; no calibration/threshold retuning |
-| Public metadata sanitization | two manifest path fields only | Original data-source hashes, memberships, maps and canonical registry unchanged |
+| Public metadata updates | source paths and non-scientific publication-rights fields in two manifests | Original data-source hashes, memberships, maps and canonical registry unchanged; human provenance digest changes |
 
 Canonical `reference_registry_v1.json` SHA256: `2c3ff81f43010caf11251053ec676d7d03ded3f941b9ac1660d836b5beeee515`.
 

@@ -8,4 +8,4 @@ The public test files retain assertions from portable C3/C3.1 tests. Private-fix
 
 Only source-path provenance fields in two manifests were sanitized. Frozen member lists, maps, canonical registry, thresholds and executable scientific code are unchanged. Human mapping provenance digests necessarily change because the adapter hashes a sanitized manifest; exact human numeric/NA parity is separately recorded. No historical human score-run hash compatibility is asserted.
 
-Code-license selection and curated Reference redistribution remain pending. The source trees retain their internal notice; no public LICENSE file, tag, Release, package-index publication, or public-data redistribution is authorized by this staging audit.
+The current project code license is MIT, copyright 2026 Shiyou Wang. Lightweight Toolkit Reference inclusion is approved separately; MGI/Ensembl materials retain upstream terms. The earlier internal notice is superseded for the current authorized source. No Atlas or real matrices are included. Online repository, tag, Release, CI, and anonymous-download verification remain uncompleted; package-index publication is outside scope.
