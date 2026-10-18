@@ -104,4 +104,3 @@ def test_distribution_gates_not_tunable_in_integration(minimum_blocks):
 
 def test_explicit_non_symbol_background_preserved():
  a,c=fixture();a.var_names=['Cd14','MHC I','Lyz2'];c['unmapped_gene_ids']=['MHC I'];b,t,mp,key=harmonize_genes(a,c);assert b.n_vars==3;assert pd.isna(t.scoring_symbol.iloc[1]);assert key=='mumomac_scoring_symbol'
-

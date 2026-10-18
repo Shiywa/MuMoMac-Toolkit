@@ -113,4 +113,3 @@ def test_native_background_axis_retained():
 
 def test_L_A_do_not_inherit_S_per_cell_gate():
  a,c=fixture();b,raw,e,ref=run_versions(a,a.obs,c,None);assert np.array_equal(b['original'].scores[list(ORDER[16:])].to_numpy(),ref.obsm['X_mumomac_reference_original'][:,16:],equal_nan=True)
-
