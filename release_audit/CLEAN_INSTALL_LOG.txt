@@ -1,0 +1,12 @@
+Retained execution evidence (staging; not an anonymous public release install).
+Raw logs are retained internally; hashes identify them without copying private local paths.
+
+BUILD_BOOTSTRAP_ATTEMPT1.log	FAIL_NETWORK_RETAINED	sha256=7648bf2d5cc17b1b93c8f14cd7fcc73c9c606a678d2cc41080ac795e28456510
+BUILD_BOOTSTRAP_ATTEMPT2.log	PASS	sha256=43baeed4ca8fe4954e447c341896c47d97e304183fe7d51f3da1be587a145aeb
+CORE_BUILD_ATTEMPT1.log	FAIL_NETWORK_RETAINED	sha256=611981c3a71a4cfd9f508b309c811f5065f2c7bc31d6d8fb3ec684b4ddf2387b
+CORE_BUILD_ATTEMPT2.log	PASS	sha256=5f9e4e184e0dae87ee1ed472761a39617f8cf239b37f646f9804bb23ae5f738d
+WRAPPER_BUILD_ATTEMPT1.log	PASS	sha256=8f956e6f9d67ba44e5058a6efddec94de1b77a028f94a7583b201083f583137f
+FRESH_WHEEL_INSTALL_ATTEMPT1.log	PASS	sha256=29e8409318ce7151069f722e7f1de2b55bc10b396ca9e7b995511212159a42c3
+FRESH_SDIST_INSTALL_ATTEMPT1.log	PASS	sha256=b7907c12d01816b4800d9d9fa2c64e75ffec2dcba1eb908507e4da5ad5b44951
+WHEEL pip check: No broken requirements found.
+SDIST pip check: No broken requirements found.

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Staged software metadata. Add the actual public tag and commit after an authorized release; no release DOI is available."
+title: "MuMoMac Toolkit: layered macrophage transcriptional feature scoring and continuous coupling"
+type: software
+version: 0.1.1rc1
+authors:
+  - name: "MuMoMac project"
+abstract: "Research workflow 0.1.1rc1 with scoring core 0.3.0 and frozen Reference 1.0.0. Staged candidate; public redistribution approval is pending."

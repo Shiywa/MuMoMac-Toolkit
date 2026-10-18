@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "mapping_digests": {
+    "original": {
+      "private_source_mapping_digest": "6e9db944c68efa5483c88f214d3d9670c9d8b283624a00e80c98fb1dabf6e0ba",
+      "staged_mapping_digest": "c962a35ecbc1efc31776d015a0eb354529fac7a4afafa2e1391ad0f7fe743d57"
+    },
+    "expanded": {
+      "private_source_mapping_digest": "6e9db944c68efa5483c88f214d3d9670c9d8b283624a00e80c98fb1dabf6e0ba",
+      "staged_mapping_digest": "c962a35ecbc1efc31776d015a0eb354529fac7a4afafa2e1391ad0f7fe743d57"
+    }
+  },
+  "explanation": "Exact human numerical/NA/coverage parity. Human mapping digest changes because the inherited adapter hashes a manifest whose private source-path fields were sanitized; mapping tables are unchanged. Historical score-run hash compatibility is not asserted.",
+  "biological_validation": false
+}

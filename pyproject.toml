@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mumomac-experimental"
+version = "0.1.1rc1"
+description = "Pinned MuMoMac expression-to-continuous-coupling research workflow"
+readme = "README.md"
+license = "LicenseRef-MuMoMac-Internal-Research"
+license-files = ["INTERNAL_NOTICE.txt", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.11"
+dependencies = ["mumomac-toolkit==0.3.0", "numpy==2.4.6", "pandas==2.3.3", "scipy==1.17.1", "scikit-learn==1.9.0", "anndata==0.12.19", "pyucell==0.8.0", "pyarrow==26.0.0", "PyYAML==6.0.3"]
+
+[project.scripts]
+mumomac-experimental = "mumomac_experimental.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"mumomac_coupling.resources" = ["*.json"]
+"mumomac_experimental" = ["resources/*.json"]

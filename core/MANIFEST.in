@@ -1,0 +1,3 @@
+include README.md INTERNAL_NOTICE.txt THIRD_PARTY_NOTICES.md
+recursive-include src *.json *.tsv
+global-exclude *.pyc

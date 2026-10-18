@@ -1,0 +1,167 @@
+{
+  "versions": {
+    "C1": "0.1.0-experimental",
+    "C2": "C2-experimental-0.1.0",
+    "C2.1": "C2.1-experimental-0.1.0",
+    "formal_toolkit": "0.3.0",
+    "frozen_reference": "1.0.0"
+  },
+  "files": [
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/registry.py",
+      "packaged_path": "src/mumomac_coupling/registry.py",
+      "sha256": "e99d13bd094c5a853b9015dd4de1f1b055fd04f044950967f167f006d64137eb"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/inference.py",
+      "packaged_path": "src/mumomac_coupling/inference.py",
+      "sha256": "78e0c087350e97855b24df318bd7ecc916944ba38aa1842ddb1a1e933763123d"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/__init__.py",
+      "packaged_path": "src/mumomac_coupling/__init__.py",
+      "sha256": "b67570cd369c8874a4ecd9aa311d0086545ea0e7f21f5e39a1b4fc7775823523"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/adapters.py",
+      "packaged_path": "src/mumomac_coupling/adapters.py",
+      "sha256": "8371fc2f60904475e3c29ef0cdc4e3a4ebcacb63d8d16eb548b8171a63e3b99b"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/states.py",
+      "packaged_path": "src/mumomac_coupling/states.py",
+      "sha256": "6bc99c22c56bc658b7b81f5218fb45ea6a12a9782f7c37ac5a1219ddf9194251"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/statistics.py",
+      "packaged_path": "src/mumomac_coupling/statistics.py",
+      "sha256": "ce5dc8b06f3336ec93d8c36a3482626db5bcae11f1b0684d25ef2ce97e8588a0"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/engine.py",
+      "packaged_path": "src/mumomac_coupling/engine.py",
+      "sha256": "0d4606725149925e020d1d0ef618abd9522f69122984b12442f786f14e6deaca"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/__main__.py",
+      "packaged_path": "src/mumomac_coupling/__main__.py",
+      "sha256": "9de5887d2dc265fa1f0496895fe2d993fce3173d2274220e9cb0ea6c7ce205af"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/MAPPED_SIGNATURES_human_original.json",
+      "packaged_path": "src/mumomac_coupling/resources/MAPPED_SIGNATURES_human_original.json",
+      "sha256": "d17a9374c7ce6fedb6d28b92f74ade01aa38ec4f52b1f8cc3c36d35b34b3e629"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/MAPPED_SIGNATURES_mouse_expanded.json",
+      "packaged_path": "src/mumomac_coupling/resources/MAPPED_SIGNATURES_mouse_expanded.json",
+      "sha256": "9b98bdd2fa6496cd6a1c0cb076888c0dd60dfd565fdb539c65e8608247c5b982"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/__init__.py",
+      "packaged_path": "src/mumomac_coupling/resources/__init__.py",
+      "sha256": "7f58578e488e996107aeb6dd54753fe58666ce07811d4fc5d052c10555a11b8b"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/FROZEN_REFERENCE_V1.json",
+      "packaged_path": "src/mumomac_coupling/resources/FROZEN_REFERENCE_V1.json",
+      "sha256": "2c3ff81f43010caf11251053ec676d7d03ded3f941b9ac1660d836b5beeee515"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/MAPPED_SIGNATURES_human_expanded.json",
+      "packaged_path": "src/mumomac_coupling/resources/MAPPED_SIGNATURES_human_expanded.json",
+      "sha256": "dc7a7fb9a69e6445a0b8541a0d671f0df88975f78ec99626ef57b62738488a39"
+    },
+    {
+      "stage": "C1",
+      "source": "upstream/src/mumomac_coupling/resources/MAPPED_SIGNATURES_mouse_original.json",
+      "packaged_path": "src/mumomac_coupling/resources/MAPPED_SIGNATURES_mouse_original.json",
+      "sha256": "fcca54dd857d0c71b3c8ed99bee67db24106dbed0469e436617d288c63647a68"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/calibration.py",
+      "packaged_path": "src/mumomac_apsc/calibration.py",
+      "sha256": "a95999f86c0809563dbfa2ee865cb9680532dd9a742e6ed624bd14aad0649847"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/__init__.py",
+      "packaged_path": "src/mumomac_apsc/__init__.py",
+      "sha256": "76aac57b917acfe20aa92e63cb833cbb9133f7f1b4788ff201e279ac93067798"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/distribution.py",
+      "packaged_path": "src/mumomac_apsc/distribution.py",
+      "sha256": "a34f7668fcf020b404f28bb584d956d3b89c790bf8d5e079eca539a7490ea7f2"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/config.py",
+      "packaged_path": "src/mumomac_apsc/config.py",
+      "sha256": "4888ac4af15169c4e8c35309dca6d77c3fbd5f64550cf15cadd6a0bd6f635449"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/engine.py",
+      "packaged_path": "src/mumomac_apsc/engine.py",
+      "sha256": "529c3d2b9f9b5270802b38f0d229b8a6694c5fa278addb0a521d88fc1ebb2c32"
+    },
+    {
+      "stage": "C2",
+      "source": "upstream/src/mumomac_apsc/__main__.py",
+      "packaged_path": "src/mumomac_apsc/__main__.py",
+      "sha256": "deb681cbca45f04c6adf3f577387ac4eceb6eaa4a30523942e6bdbfc92afea77"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/__init__.py",
+      "packaged_path": "src/mumomac_representation/__init__.py",
+      "sha256": "5f7e581566465ac56154e7ca3090519b01e4338fa6ef2cefb3abbb2b66516ca4"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/ecdf.py",
+      "packaged_path": "src/mumomac_representation/ecdf.py",
+      "sha256": "25fac825bc96a1be2b6e0f13ef8f025488e7f19c1afe2c0cd622314fbe99f1e2"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/evidence.py",
+      "packaged_path": "src/mumomac_representation/evidence.py",
+      "sha256": "24a8e3d8e48c8e24dadc367bc954c15aa85a622c25b2f4ee933ff5868b2f39ec"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/config.py",
+      "packaged_path": "src/mumomac_representation/config.py",
+      "sha256": "88b80c54eb063fb09a2b2ca950bed0010e8849a33a967627622ee44fc81abc44"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/engine.py",
+      "packaged_path": "src/mumomac_representation/engine.py",
+      "sha256": "05a5705b6f8866bb6d55e80abacceb587e3b2acd1183235908a324268901699c"
+    },
+    {
+      "stage": "C2.1",
+      "source": "upstream/src/mumomac_representation/__main__.py",
+      "packaged_path": "src/mumomac_representation/__main__.py",
+      "sha256": "87ea0f6eea2b906c3cb9c078084fa4687dff75c205f0c7e566ba19dac123b481"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+MuMoMac Toolkit v0.1 internal research usage notice
+
+This MVP is delivered for the user's internal research and evaluation. No public
+redistribution license for MuMoMac code or curated signature resources is asserted
+by this development task. A public license must be selected and confirmed by the
+rights holders before public redistribution. This notice does not confer ownership
+of pre-existing Atlas resources or third-party software.
+
+Third-party dependencies retain their own licenses. pyUCell 0.8.0 is MIT-licensed;
+its actual wheel license and source provenance are recorded in docs/THIRD_PARTY.md.
+The dependency is used without modifying or reproducing its scoring implementation.

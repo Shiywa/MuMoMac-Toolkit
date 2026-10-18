@@ -1,0 +1,57 @@
+name	version	license_expression	license_declaration	license_metadata_sha256	license_files	scope	review
+anndata	0.12.19	BSD-3-Clause	BSD-3-Clause		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+array-api-compat	1.15.0	MIT	MIT			external public distribution; not vendored	metadata recorded; not a legal clearance
+cloudpickle	3.1.2		License :: OSI Approved :: BSD License	118dbcd2d5c9f9b296a9ede9fcc469c5840f7b98ad2c88461055bf2ceda38037	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+contourpy	1.3.3		License :: OSI Approved :: BSD License	d3d2ca388bb40cfcabd217c061836db0275982a0efb18023a34e5cf845f4b193		external public distribution; not vendored	metadata recorded; not a legal clearance
+cycler	0.12.1		License :: OSI Approved :: BSD License	f1218143d766da3fea66f13396b7f15df46a83303f29bf96ba6e98eb4d42f408	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+donfig	0.8.1.post1		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE.txt; AUTHORS.md	external public distribution; not vendored	metadata recorded; not a legal clearance
+fonttools	4.67.0		MIT	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE; LICENSE.external	external public distribution; not vendored	metadata recorded; not a legal clearance
+formulaic	1.2.2	MIT	MIT		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+google-crc32c	1.9.0		Apache-2.0	2af71558e438db0b73a20beab92dc278a94e1bbe974c00c1a33e3ab62d53a608	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+h5py	3.16.0	BSD-3-Clause	BSD-3-Clause		LICENSE; lzf/LICENSE.txt; licenses/hdf5.txt; licenses/license.txt; licenses/pytables.txt; licenses/python.txt; licenses/stdint.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+iniconfig	2.3.1	MIT	MIT		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+interface_meta	2.0.1		MIT	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+joblib	1.6.0	BSD-3-Clause	BSD-3-Clause		LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+kiwisolver	1.5.1		License :: OSI Approved :: BSD License	529c40e5f67f2f88904657a9f7879ae2f8dc76bc9bfef9cb10d988b48804ed61	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+legacy-api-wrap	1.5	MPL-2.0	MPL-2.0		LICENSE.rst	external public distribution; not vendored	metadata recorded; not a legal clearance
+llvmlite	0.50.0	BSD-2-Clause AND Apache-2.0 WITH LLVM-exception	BSD-2-Clause AND Apache-2.0 WITH LLVM-exception		LICENSE; LICENSE.thirdparty	external public distribution; not vendored	metadata recorded; not a legal clearance
+matplotlib	3.11.2		License :: OSI Approved :: Python Software Foundation License	11b43b00dc032aba34426bfb8f93d48714076cbad3753cacec31b9d0f522aa2f		external public distribution; not vendored	metadata recorded; not a legal clearance
+mumomac-experimental	0.1.1rc1	LicenseRef-MuMoMac-Internal-Research	LicenseRef-MuMoMac-Internal-Research		INTERNAL_NOTICE.txt	project; PUBLIC LICENSE PENDING	metadata recorded; not a legal clearance
+mumomac-toolkit	0.3.0	LicenseRef-MuMoMac-Internal-Research	LicenseRef-MuMoMac-Internal-Research		INTERNAL_NOTICE.txt	project; PUBLIC LICENSE PENDING	metadata recorded; not a legal clearance
+narwhals	2.27.1	MIT	MIT		LICENSE.md	external public distribution; not vendored	metadata recorded; not a legal clearance
+natsort	8.4.0		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+networkx	3.6.1	BSD-3-Clause	BSD-3-Clause		LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+numba	0.68.0		License :: OSI Approved :: BSD License	49d9777da612e1f4e9269fa9f93ea324a66f9dcc7722ad812de124ef3f266d93	LICENSE; LICENSES.third-party	external public distribution; not vendored	metadata recorded; not a legal clearance
+numcodecs	0.16.5	MIT	MIT		LICENSE.txt; c-blosc/LICENSE.txt; c-blosc/LICENSES/BITSHUFFLE.txt; c-blosc/LICENSES/FASTLZ.txt; c-blosc/LICENSES/LZ4.txt; c-blosc/LICENSES/SNAPPY.txt; c-blosc/LICENSES/STDINT.txt; c-blosc/LICENSES/ZLIB-NG.txt; c-blosc/LICENSES/ZLIB.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+numpy	2.4.6	BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0	BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0		LICENSE.txt; numpy/_core/include/numpy/libdivide/LICENSE.txt; numpy/_core/src/common/pythoncapi-compat/COPYING; numpy/_core/src/highway/LICENSE; numpy/_core/src/multiarray/dragon4_LICENSE.txt; numpy/_core/src/npysort/x86-simd-sort/LICENSE.md; numpy/_core/src/umath/svml/LICENSE; numpy/fft/pocketfft/LICENSE.md; numpy/linalg/lapack_lite/LICENSE.txt; numpy/ma/LICENSE; numpy/random/LICENSE.md; numpy/random/src/distributions/LICENSE.md; numpy/random/src/mt19937/LICENSE.md; numpy/random/src/pcg64/LICENSE.md; numpy/random/src/philox/LICENSE.md; numpy/random/src/sfc64/LICENSE.md; numpy/random/src/splitmix64/LICENSE.md	external public distribution; not vendored	metadata recorded; not a legal clearance
+packaging	26.3	Apache-2.0 OR BSD-2-Clause	Apache-2.0 OR BSD-2-Clause		LICENSE; LICENSE.APACHE; LICENSE.BSD	external public distribution; not vendored	metadata recorded; not a legal clearance
+pandas	2.3.3		License :: OSI Approved :: BSD License	0ca26575ae36b173a7416e656b74838c85f3455140654299bb5cc496232f2ecc		external public distribution; not vendored	metadata recorded; not a legal clearance
+patsy	1.0.3		License :: OSI Approved :: BSD License	d7f5d0c836a8ad8eeb889fd2be7e129248e656d2010f9596a1c63f9bc86bcc00	LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+pillow	13.0.0	MIT-CMU	MIT-CMU		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pip	24.0		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE.txt; AUTHORS.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+pluggy	1.7.0		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pyarrow	26.0.0	Apache-2.0	Apache-2.0		LICENSE.txt; NOTICE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+Pygments	2.21.0	BSD-2-Clause	BSD-2-Clause		AUTHORS; LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pynndescent	0.6.0	BSD-2-Clause	BSD-2-Clause		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pyparsing	3.3.3	MIT	MIT		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pytest	9.1.1	MIT	MIT		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+python-dateutil	2.9.0.post0		License :: OSI Approved :: BSD License; License :: OSI Approved :: Apache Software License	199628ddb098f90709bb2dc43f816a5a40fe31690de0e25d0f4d6455fe6bc609	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+pytz	2026.5		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+pyucell	0.8.0		MIT License Copyright (c) 2025, Massimo Andreatta Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated d	250902533a41f1b55f47616b7544b6e20b287ab843797ca44caeb2ab848a1b91	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+PyYAML	6.0.3		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+scanpy	1.11.5	BSD-3-Clause	BSD-3-Clause		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+scikit-learn	1.9.0	BSD-3-Clause	BSD-3-Clause		COPYING	external public distribution; not vendored	metadata recorded; not a legal clearance
+scipy	1.17.1		License :: OSI Approved :: BSD License	f5322e8eb7c9d0155475f23c903dc68d59a62ff146eb0d41acef061cd7fef874		external public distribution; not vendored	metadata recorded; not a legal clearance
+scverse-misc	0.0.3		BSD 3-Clause License Copyright (c) 2026, Ilia Kats All rights reserved. Redistribution and use in source and binary forms, with or without modification, are per	75d6246248b17e965b13af96c2bc083682a3081cffedf3268e23e7e8eeaa1caf	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+seaborn	0.13.2		License :: OSI Approved :: BSD License			external public distribution; not vendored	metadata recorded; not a legal clearance
+session-info2	0.4.1	MPL-2.0	MPL-2.0		LICENSE.rst	external public distribution; not vendored	metadata recorded; not a legal clearance
+setuptools	79.0.1		UNKNOWN		LICENSE	external public distribution; not vendored	MISSING LICENSE METADATA
+six	1.17.0		License :: OSI Approved :: MIT License	e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7	LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+statsmodels	0.15.0	BSD-3-Clause	BSD-3-Clause		LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+threadpoolctl	3.7.0	BSD-3-Clause	BSD-3-Clause		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+tqdm	4.70.1		MPL-2.0 AND MIT	497716e0cebf8fb1944bbac349083f8ba656e10320c3f9811a955fc8786d0cc1	LICENCE	external public distribution; not vendored	metadata recorded; not a legal clearance
+typing_extensions	4.16.0	PSF-2.0	PSF-2.0		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+tzdata	2026.5		Apache-2.0	2af71558e438db0b73a20beab92dc278a94e1bbe974c00c1a33e3ab62d53a608	LICENSE; licenses/LICENSE_APACHE	external public distribution; not vendored	metadata recorded; not a legal clearance
+umap-learn	0.5.12		License :: OSI Approved	49d9777da612e1f4e9269fa9f93ea324a66f9dcc7722ad812de124ef3f266d93	LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance
+wrapt	2.5.1	BSD-2-Clause	BSD-2-Clause		LICENSE	external public distribution; not vendored	metadata recorded; not a legal clearance
+zarr	3.1.6	MIT	MIT		LICENSE.txt	external public distribution; not vendored	metadata recorded; not a legal clearance

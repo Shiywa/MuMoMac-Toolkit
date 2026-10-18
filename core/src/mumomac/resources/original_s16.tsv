@@ -1,0 +1,182 @@
+program_id	tag_id	program_name	gene
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Ifit1
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Ifit2
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Ifit3
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Irf7
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Isg15
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Isg20
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Mx1
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Oas1a
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Oas1g
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Oas2
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Rsad2
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Stat1
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Usp18
+S01	S01_IFN_ANTIVIRAL	IFN antiviral	Zbp1
+S02	S02_MHCII_AP	MHC-II antigen presentation	Cd74
+S02	S02_MHCII_AP	MHC-II antigen presentation	Cd83
+S02	S02_MHCII_AP	MHC-II antigen presentation	Ciita
+S02	S02_MHCII_AP	MHC-II antigen presentation	Cxcl9
+S02	S02_MHCII_AP	MHC-II antigen presentation	H2-Aa
+S02	S02_MHCII_AP	MHC-II antigen presentation	H2-Ab1
+S02	S02_MHCII_AP	MHC-II antigen presentation	H2-Eb1
+S02	S02_MHCII_AP	MHC-II antigen presentation	Psmb9
+S02	S02_MHCII_AP	MHC-II antigen presentation	Tap1
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Bcl2a1a
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Ccl3
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Ccl4
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Cxcl2
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Cxcl3
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Il1a
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Il1b
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Nfkbia
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Nfkbie
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Osm
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Ptgs2
+S03	S03_IL1_NFKB	IL1/NF-kB inflammation	Tnf
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	Ccl2
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	Ccl7
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	Clec4d
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	Fpr1
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	S100a8
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	S100a9
+S04	S04_INFLAMMATORY_EFFECTOR	Inflammatory effector	Trem1
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Cd274
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Dusp1
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Dusp16
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Dusp5
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Ier3
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Il1rn
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Nfkbiz
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Rcan1
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Serpinb1a
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Slpi
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Socs3
+S05	S05_INFLAMMATORY_FEEDBACK_REGULATION	Inflammatory feedback regulation	Tnfaip3
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Adm
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Adora2b
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Angptl4
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Bnip3
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Egln3
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Hif1a
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Ldha
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Mxi1
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Pdk1
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Pfkfb3
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Rab20
+S06	S06_HYPOXIA_GLYCOLYSIS	Hypoxia/glycolysis	Slc2a1
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Amotl1
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Bcam
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Cav1
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Cd93
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Dock9
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Igfbp7
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Nfib
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Pdgfb
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Plcg1
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Procr
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Vegfa
+S07	S07_ANGIOGENIC_VASCULAR	Angiogenic/vascular	Wwtr1
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Abca1
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Abcg1
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Acot1
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Acot7
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Cd36
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Cpt1a
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Cyp27a1
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Hsd17b4
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Lipa
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Plin2
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Ppard
+S08	S08_LIPID_METABOLISM	Lipid metabolism	Ppargc1b
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Apoe
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Cd63
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Cd9
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Ctsb
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Ctsd
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Gpnmb
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Hexa
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Lamp1
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Lgals3
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Lpl
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Msr1
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Naglu
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Slc27a1
+S09	S09_TREM2_LYSOSOMAL	TREM2/lysosomal	Trem2
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Ahnak2
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Fblim1
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Fn1
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Itga5
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Itgav
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Mmp12
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Mmp14
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Mmp9
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Plaur
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Spp1
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Tgfbi
+S10	S10_SPP1_MATRIX	SPP1/matrix remodeling	Timp1
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Axl
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Capg
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Cd163
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Gas6
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Gdf15
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Il10
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Lgals1
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Myof
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Psap
+S11	S11_RESOLUTION_REPAIR	Resolution/tissue repair	Tgfb1
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Cd5l
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Elmo1
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Gulp1
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Lrp1
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Marco
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Mfge8
+S12	S12_EFFEROCYTOSIS	Efferocytosis/clearance	Stab2
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	C1ra
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	C1s1
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	C3
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	C4b
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Cd55
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Cfb
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Cfp
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Clu
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Serping1
+S13	S13_NON_C1Q_COMPLEMENT	Non-C1Q complement regulation/activation	Vsig4
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Abcb6
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Alas1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Blvrb
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Cp
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Fth1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Ftl1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Hmox1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Hpx
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Nr1h3
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Slc40a1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Slc48a1
+S14	S14_HEME_CATABOLISM_IRON_RECYCLING	Heme catabolism and iron recycling	Spic
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Abcc1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Gclc
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Gclm
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Gpx1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Gsr
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Nqo1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Prdx1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Slc7a11
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Sod2
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Srxn1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Txn1
+S15	S15_ANTIOXIDANT_REDOX_DETOXIFICATION	Antioxidant/redox detoxification	Txnrd1
+S16	S16_CYCLING_G2M	Cycling/G2M	Birc5
+S16	S16_CYCLING_G2M	Cycling/G2M	Ccnb1
+S16	S16_CYCLING_G2M	Cycling/G2M	Ccnb2
+S16	S16_CYCLING_G2M	Cycling/G2M	Cdk1
+S16	S16_CYCLING_G2M	Cycling/G2M	Cenpf
+S16	S16_CYCLING_G2M	Cycling/G2M	Cenph
+S16	S16_CYCLING_G2M	Cycling/G2M	Kif2c
+S16	S16_CYCLING_G2M	Cycling/G2M	Mki67
+S16	S16_CYCLING_G2M	Cycling/G2M	Nusap1
+S16	S16_CYCLING_G2M	Cycling/G2M	Rad51ap1
+S16	S16_CYCLING_G2M	Cycling/G2M	Stmn1
+S16	S16_CYCLING_G2M	Cycling/G2M	Top2a
+S16	S16_CYCLING_G2M	Cycling/G2M	Ttk
+S16	S16_CYCLING_G2M	Cycling/G2M	Ube2c

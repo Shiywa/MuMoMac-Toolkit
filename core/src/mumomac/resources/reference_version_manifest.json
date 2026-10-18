@@ -1,0 +1,23 @@
+{
+  "reference_version": "1.0.0",
+  "schema": "reference_version_manifest_v1",
+  "resource_sha256": {
+    "reference_registry_v1.json": "2c3ff81f43010caf11251053ec676d7d03ded3f941b9ac1660d836b5beeee515",
+    "human_la_one_to_one_v1.tsv": "60db7f137335dd270de2b83455bd9f1d056d4e1f492a3f23680ea5870856fdb2",
+    "identity_reference_v1.json": "f4bdf92794bf0e707900b4a976c298eb2dfe81305755fb575834bdfd249387fe",
+    "historical_thresholds_v4.tsv": "2efe7dc417d1eb448e656446399208dc6f48f5d841f174c3a479b1c0623823ed"
+  },
+  "inherited_s16_resource_sha256": {
+    "original_s16.tsv": "e78982b4f7abc0153f4e31df0086414fb3e62b2d5b07ef4e1f71dc46ca0216df",
+    "human_one_to_one.tsv": "5b87f7f3e66433c014e024d8dd5c89f2e294057486372e11ef999c028161b9e7",
+    "expanded_s16.tsv": "a5f4f9ca002a5f74a4429fe0a98abd06a9c071457110b01ebf2744c33b35c670"
+  },
+  "signature_count": 44,
+  "feature_count": 22,
+  "s16_expanded_math": "unchanged v0.2: 0.5 Seed UCell +0.5 Added UCell",
+  "la_expanded_math": "uniform positive Full UCell from Phase4",
+  "original_memberships": 229,
+  "expanded_memberships": 820,
+  "public_release_license": "BLOCKED pending owner authorization and resource rights",
+  "created_date": "2026-10-14"
+}

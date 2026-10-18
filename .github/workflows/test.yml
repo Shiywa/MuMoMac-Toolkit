@@ -1,0 +1,46 @@
+name: Build and synthetic smoke
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  linux-python311:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Build both distributions
+        run: |
+          python -m pip install --index-url https://pypi.org/simple build 'setuptools>=77' wheel
+          python -m build --outdir dist core
+          python -m build --outdir dist .
+      - name: Install wheels into a fresh environment
+        run: |
+          python -m venv "$RUNNER_TEMP/mumomac-run"
+          "$RUNNER_TEMP/mumomac-run/bin/python" -m pip install --index-url https://pypi.org/simple dist/*.whl pytest
+          "$RUNNER_TEMP/mumomac-run/bin/python" -m pip check
+      - name: Portable regression
+        run: |
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/mumomac-run/bin/python" -m pytest --import-mode=importlib -p no:cacheprovider "$GITHUB_WORKSPACE/tests" -q
+      - name: Run documented CLI outside the checkout
+        run: |
+          mkdir -p "$RUNNER_TEMP/mumomac-external"
+          cd "$RUNNER_TEMP/mumomac-external"
+          "$RUNNER_TEMP/mumomac-run/bin/python" "$GITHUB_WORKSPACE/examples/make_synthetic_example.py" --output example-data
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" --help
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" analyze --input example-data/synthetic_counts.h5ad --metadata example-data/provided_metadata.tsv --config example-data/config.yaml --signature-version both --output example-results
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" seed-details --run example-results --cell-id SYN0000 --program-id S03
+          "$RUNNER_TEMP/mumomac-run/bin/mumomac-experimental" score-run --input-run example-results --output replay-results
+      - name: Install source distributions into a second fresh environment
+        run: |
+          python -m venv "$RUNNER_TEMP/mumomac-sdist"
+          "$RUNNER_TEMP/mumomac-sdist/bin/python" -m pip install --index-url https://pypi.org/simple dist/*.tar.gz
+          mkdir -p "$RUNNER_TEMP/mumomac-sdist-external"
+          cd "$RUNNER_TEMP/mumomac-sdist-external"
+          "$RUNNER_TEMP/mumomac-sdist/bin/python" "$GITHUB_WORKSPACE/examples/make_synthetic_example.py" --output data
+          "$RUNNER_TEMP/mumomac-sdist/bin/mumomac-experimental" analyze --input data/synthetic_counts.h5ad --metadata data/provided_metadata.tsv --config data/config.yaml --signature-version both --output results

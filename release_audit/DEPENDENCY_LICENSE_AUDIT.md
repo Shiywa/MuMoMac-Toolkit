@@ -1,0 +1,9 @@
+# Dependency license audit
+
+The independent wheel environment installed 56 distributions, including the two project packages and test/build bootstrap packages. `DEPENDENCY_LICENSES.tsv` records each installed version, its supplied SPDX expression/classifiers/license declaration, declared license files, and a digest when license text is embedded in metadata. Dependencies were obtained from public PyPI and are not vendored in this repository.
+
+Direct scientific dependencies: anndata 0.12.19 (BSD-3-Clause), numpy 2.4.6 (its full multi-license expression is retained), pandas 2.3.3 (BSD declaration), scipy 1.17.1 (BSD declaration), scikit-learn 1.9.0 (BSD-3-Clause), pyUCell 0.8.0 (MIT text), pyarrow 26.0.0 (Apache-2.0), and PyYAML 6.0.3 (MIT declaration). Transitive dependencies, notices and bundled components retain their original distribution terms; this table is metadata evidence, not a relicensing decision.
+
+Setuptools 79.0.1 has missing License metadata despite a declared LICENSE file. Its installed `setuptools-79.0.1.dist-info/licenses/LICENSE` was inspected and contains the MIT permission text. Its vendored components include separate licenses (for example LGPL-3.0 text in autocommand); therefore the complete setuptools distribution must not be described as solely MIT. Setuptools is an external build/bootstrap tool and is not copied into this repository or MuMoMac wheels.
+
+Both MuMoMac distributions retain `LicenseRef-MuMoMac-Internal-Research`. A public code license and curated Reference authorization are pending. Upstream MGI/Ensembl terms and attribution are recorded in `THIRD_PARTY_NOTICES.md`. No third-party dependency or mapping table is assigned a future project license by this audit.

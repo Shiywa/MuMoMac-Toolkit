@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": 2059,
+  "n_passed": 2059,
+  "comparison": "Exact values and NA masks; no numerical tolerance changes",
+  "frozen_science_modified": false,
+  "protected_source_checks": 83
+}

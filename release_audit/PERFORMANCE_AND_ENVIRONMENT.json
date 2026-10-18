@@ -1,0 +1,88 @@
+{
+  "system": {
+    "python": "3.11.15",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "logical_cpu_count": 128,
+    "os_release": {
+      "NAME": "Ubuntu",
+      "ID": "ubuntu",
+      "PRETTY_NAME": "Ubuntu 20.04.6 LTS",
+      "VERSION": "20.04.6 LTS (Focal Fossa)",
+      "ID_LIKE": "debian",
+      "VERSION_ID": "20.04",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "VERSION_CODENAME": "focal",
+      "UBUNTU_CODENAME": "focal"
+    },
+    "thread_limits": 2,
+    "tested_environment": "Linux x86_64 only; Ubuntu CI configured, not run",
+    "distributions": 56,
+    "cpu_model": "AMD EPYC 7542 32-Core Processor"
+  },
+  "input": {
+    "artificial_profiles": 256,
+    "selected_target_profiles": 240,
+    "native_genes": 795,
+    "sample_records": 4,
+    "confirmed_animals": 0
+  },
+  "runs": {
+    "wheel": {
+      "both_root": {
+        "runtime_seconds": 20.756410918198526,
+        "peak_rss_GiB": null,
+        "n_input": 256,
+        "n_selected": 240
+      },
+      "original": {
+        "n_input": 256,
+        "n_selected": 240,
+        "n_sample_records": 4,
+        "n_confirmed_biological_units": 0,
+        "runtime_seconds": 5.8626951314508915,
+        "peak_rss_GiB": 0.369110107421875,
+        "n_programs_scoring_eligible": 22
+      },
+      "expanded": {
+        "n_input": 256,
+        "n_selected": 240,
+        "n_sample_records": 4,
+        "n_confirmed_biological_units": 0,
+        "runtime_seconds": 5.924943121150136,
+        "peak_rss_GiB": 0.39943695068359375,
+        "n_programs_scoring_eligible": 22
+      }
+    },
+    "sdist": {
+      "both_root": {
+        "runtime_seconds": 20.591368603520095,
+        "peak_rss_GiB": null,
+        "n_input": 256,
+        "n_selected": 240
+      },
+      "original": {
+        "n_input": 256,
+        "n_selected": 240,
+        "n_sample_records": 4,
+        "n_confirmed_biological_units": 0,
+        "runtime_seconds": 5.7629504557698965,
+        "peak_rss_GiB": 0.3639678955078125,
+        "n_programs_scoring_eligible": 22
+      },
+      "expanded": {
+        "n_input": 256,
+        "n_selected": 240,
+        "n_sample_records": 4,
+        "n_confirmed_biological_units": 0,
+        "runtime_seconds": 5.991763357073069,
+        "peak_rss_GiB": 0.4061164855957031,
+        "n_programs_scoring_eligible": 22
+      }
+    }
+  }
+}

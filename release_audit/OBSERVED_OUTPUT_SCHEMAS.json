@@ -1,0 +1,4198 @@
+{
+  "cell_metadata.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "provided_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "input_expression_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "input_detected_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "nUMI",
+        "dtype": "int64"
+      },
+      {
+        "name": "nGenes",
+        "dtype": "int64"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      }
+    ]
+  },
+  "cell_program_representation.parquet": {
+    "rows": 10560,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "program_id",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_program_score",
+        "dtype": "float64"
+      },
+      {
+        "name": "scoring_method",
+        "dtype": "string"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_version",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_applicable",
+        "dtype": "bool"
+      },
+      {
+        "name": "continuous_score_eligible",
+        "dtype": "bool"
+      },
+      {
+        "name": "representation_type",
+        "dtype": "string"
+      },
+      {
+        "name": "requested_mode",
+        "dtype": "string"
+      },
+      {
+        "name": "actual_method",
+        "dtype": "string"
+      },
+      {
+        "name": "discrete_or_relative_state",
+        "dtype": "string"
+      },
+      {
+        "name": "state_code",
+        "dtype": "int64"
+      },
+      {
+        "name": "posterior_high",
+        "dtype": "float64"
+      },
+      {
+        "name": "calibration_percentile",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_low",
+        "dtype": "string"
+      },
+      {
+        "name": "threshold_high",
+        "dtype": "string"
+      },
+      {
+        "name": "state_definition",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_id",
+        "dtype": "string"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "string"
+      },
+      {
+        "name": "user_override",
+        "dtype": "bool"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "string"
+      },
+      {
+        "name": "domain_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "raw_score_for_qc",
+        "dtype": "float32"
+      },
+      {
+        "name": "n_seed_detected",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_seed_measured",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_seed_total",
+        "dtype": "float64"
+      },
+      {
+        "name": "definition_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "measured_subset_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "reason_if_invalid",
+        "dtype": "object"
+      },
+      {
+        "name": "full_original_coverage_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_coverage_interpretation",
+        "dtype": "object"
+      }
+    ]
+  },
+  "cell_program_scores.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "original__S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "original__A01",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "expanded__A01",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_original_for_qc__A01",
+        "dtype": "float32"
+      }
+    ]
+  },
+  "cell_seed_detection.parquet": {
+    "rows": 5280,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "n_seed_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_seed_measured",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_seed_detected",
+        "dtype": "int16"
+      },
+      {
+        "name": "coverage_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "eligible_for_scoring",
+        "dtype": "bool"
+      },
+      {
+        "name": "reason_if_invalid",
+        "dtype": "object"
+      },
+      {
+        "name": "raw_score_for_qc",
+        "dtype": "float32"
+      },
+      {
+        "name": "valid_program_score",
+        "dtype": "float32"
+      },
+      {
+        "name": "definition_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "original_signature_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "measured_subset_hash",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/cell_metadata.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "provided_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "input_expression_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "input_detected_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "nUMI",
+        "dtype": "int64"
+      },
+      {
+        "name": "nGenes",
+        "dtype": "int64"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/cell_program_representation.parquet": {
+    "rows": 5280,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "program_id",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_program_score",
+        "dtype": "float64"
+      },
+      {
+        "name": "scoring_method",
+        "dtype": "string"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_version",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_applicable",
+        "dtype": "bool"
+      },
+      {
+        "name": "continuous_score_eligible",
+        "dtype": "bool"
+      },
+      {
+        "name": "representation_type",
+        "dtype": "string"
+      },
+      {
+        "name": "requested_mode",
+        "dtype": "string"
+      },
+      {
+        "name": "actual_method",
+        "dtype": "string"
+      },
+      {
+        "name": "discrete_or_relative_state",
+        "dtype": "string"
+      },
+      {
+        "name": "state_code",
+        "dtype": "int64"
+      },
+      {
+        "name": "posterior_high",
+        "dtype": "float64"
+      },
+      {
+        "name": "calibration_percentile",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_low",
+        "dtype": "string"
+      },
+      {
+        "name": "threshold_high",
+        "dtype": "string"
+      },
+      {
+        "name": "state_definition",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_id",
+        "dtype": "string"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "string"
+      },
+      {
+        "name": "user_override",
+        "dtype": "bool"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "string"
+      },
+      {
+        "name": "domain_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/cell_program_scores.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "identity",
+        "dtype": "object"
+      },
+      {
+        "name": "S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "A01",
+        "dtype": "float32"
+      },
+      {
+        "name": "scoring_method",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_version",
+        "dtype": "object"
+      },
+      {
+        "name": "program_version",
+        "dtype": "object"
+      },
+      {
+        "name": "QC_reference",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/detected_members.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "S01",
+        "dtype": "int16"
+      },
+      {
+        "name": "S02",
+        "dtype": "int16"
+      },
+      {
+        "name": "S03",
+        "dtype": "int16"
+      },
+      {
+        "name": "S04",
+        "dtype": "int16"
+      },
+      {
+        "name": "S05",
+        "dtype": "int16"
+      },
+      {
+        "name": "S06",
+        "dtype": "int16"
+      },
+      {
+        "name": "S07",
+        "dtype": "int16"
+      },
+      {
+        "name": "S08",
+        "dtype": "int16"
+      },
+      {
+        "name": "S09",
+        "dtype": "int16"
+      },
+      {
+        "name": "S10",
+        "dtype": "int16"
+      },
+      {
+        "name": "S11",
+        "dtype": "int16"
+      },
+      {
+        "name": "S12",
+        "dtype": "int16"
+      },
+      {
+        "name": "S13",
+        "dtype": "int16"
+      },
+      {
+        "name": "S14",
+        "dtype": "int16"
+      },
+      {
+        "name": "S15",
+        "dtype": "int16"
+      },
+      {
+        "name": "S16",
+        "dtype": "int16"
+      },
+      {
+        "name": "L01",
+        "dtype": "int16"
+      },
+      {
+        "name": "L02",
+        "dtype": "int16"
+      },
+      {
+        "name": "L03",
+        "dtype": "int16"
+      },
+      {
+        "name": "L04",
+        "dtype": "int16"
+      },
+      {
+        "name": "L05",
+        "dtype": "int16"
+      },
+      {
+        "name": "A01",
+        "dtype": "int16"
+      }
+    ]
+  },
+  "expanded/distribution_model_comparison.tsv": {
+    "rows": 96,
+    "columns": [
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_group",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "blocked_mean_heldout_loglik",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_valid_heldout_blocks",
+        "dtype": "int64"
+      },
+      {
+        "name": "validation_unit",
+        "dtype": "object"
+      },
+      {
+        "name": "name",
+        "dtype": "object"
+      },
+      {
+        "name": "mean",
+        "dtype": "float64"
+      },
+      {
+        "name": "sd",
+        "dtype": "float64"
+      },
+      {
+        "name": "k",
+        "dtype": "int64"
+      },
+      {
+        "name": "valid",
+        "dtype": "bool"
+      },
+      {
+        "name": "outside_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "loglik",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_balanced",
+        "dtype": "int64"
+      },
+      {
+        "name": "aic",
+        "dtype": "float64"
+      },
+      {
+        "name": "bic",
+        "dtype": "float64"
+      },
+      {
+        "name": "parameters",
+        "dtype": "object"
+      },
+      {
+        "name": "fit_warnings",
+        "dtype": "object"
+      },
+      {
+        "name": "means",
+        "dtype": "object"
+      },
+      {
+        "name": "sds",
+        "dtype": "object"
+      },
+      {
+        "name": "weights",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/pairwise_gene_overlap.tsv": {
+    "rows": 120,
+    "columns": [
+      {
+        "name": "pair_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_A",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n",
+        "dtype": "int64"
+      },
+      {
+        "name": "gene_overlap_jaccard",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "shared_genes",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/program_coverage.tsv": {
+    "rows": 22,
+    "columns": [
+      {
+        "name": "feature_id",
+        "dtype": "object"
+      },
+      {
+        "name": "display_name",
+        "dtype": "object"
+      },
+      {
+        "name": "feature_class",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_set_version",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_set_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "reference_version",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_formula",
+        "dtype": "object"
+      },
+      {
+        "name": "n_reference_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_mapped_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_present_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "mapping_retention",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_policy",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_eligible",
+        "dtype": "bool"
+      },
+      {
+        "name": "applicability_status",
+        "dtype": "object"
+      },
+      {
+        "name": "median_cell_detected_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "fraction_cells_zero_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "present_genes",
+        "dtype": "object"
+      },
+      {
+        "name": "absent_genes",
+        "dtype": "float64"
+      },
+      {
+        "name": "unmapped_genes",
+        "dtype": "float64"
+      },
+      {
+        "name": "developmental_candidate",
+        "dtype": "bool"
+      },
+      {
+        "name": "construct_validity",
+        "dtype": "object"
+      },
+      {
+        "name": "default_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_limits",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/program_representation_decisions.tsv": {
+    "rows": 44,
+    "columns": [
+      {
+        "name": "calibration_group",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "n_finite",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_unique",
+        "dtype": "int64"
+      },
+      {
+        "name": "max_tied_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "boundary_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_min",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_max",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_sd",
+        "dtype": "float64"
+      },
+      {
+        "name": "detection_QC",
+        "dtype": "object"
+      },
+      {
+        "name": "detection_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "basic_QC_pass",
+        "dtype": "bool"
+      },
+      {
+        "name": "basic_QC_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "auto_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "decision_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "partition_evidence",
+        "dtype": "object"
+      },
+      {
+        "name": "unit_level",
+        "dtype": "object"
+      },
+      {
+        "name": "n_calibration_blocks",
+        "dtype": "int64"
+      },
+      {
+        "name": "best_unimodal",
+        "dtype": "object"
+      },
+      {
+        "name": "bic_gain_over_best_unimodal",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_valid_folds",
+        "dtype": "float64"
+      },
+      {
+        "name": "mean_block_loglik_gain",
+        "dtype": "float64"
+      },
+      {
+        "name": "positive_block_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "LOO_shape_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "LOO_min_label_agreement",
+        "dtype": "float64"
+      },
+      {
+        "name": "initialization_min_agreement",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_interpretation",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_reliable",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_separation",
+        "dtype": "float64"
+      },
+      {
+        "name": "gmm_kde_peak_counts",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_weights",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "method_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/sample_coupling_statistics.parquet": {
+    "rows": 960,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_A",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B",
+        "dtype": "object"
+      },
+      {
+        "name": "historical_candidate",
+        "dtype": "bool"
+      },
+      {
+        "name": "n11",
+        "dtype": "float64"
+      },
+      {
+        "name": "n10",
+        "dtype": "float64"
+      },
+      {
+        "name": "n01",
+        "dtype": "float64"
+      },
+      {
+        "name": "n00",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "A_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "B_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "joint_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "lift",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuity_correction",
+        "dtype": "float64"
+      },
+      {
+        "name": "raw_OR_status",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "estimability_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_uncertain",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_unassessable",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_continuous",
+        "dtype": "int64"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      },
+      {
+        "name": "spearman",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuous_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_adjusted",
+        "dtype": "int64"
+      },
+      {
+        "name": "covariates_used",
+        "dtype": "object"
+      },
+      {
+        "name": "dropped_covariates",
+        "dtype": "object"
+      },
+      {
+        "name": "activity_adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "activity_adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n",
+        "dtype": "int64"
+      },
+      {
+        "name": "gene_overlap_jaccard",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "shared_genes",
+        "dtype": "object"
+      },
+      {
+        "name": "coverage_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_method",
+        "dtype": "object"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "technical_QC",
+        "dtype": "object"
+      },
+      {
+        "name": "p_value",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_A_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_status",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "method_version",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "object"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "object"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "object"
+      },
+      {
+        "name": "QC_reference",
+        "dtype": "object"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "object"
+      },
+      {
+        "name": "n_target_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_A_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_B_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_pair_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "fraction_pair_valid",
+        "dtype": "float64"
+      },
+      {
+        "name": "failure_reason_distribution",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "n_binary_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "fraction_denominator_policy",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/selected_pair_joint_features.parquet": {
+    "rows": 720,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "condition",
+        "dtype": "string"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "string"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "string"
+      },
+      {
+        "name": "program_A",
+        "dtype": "string"
+      },
+      {
+        "name": "program_B",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_A",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_B",
+        "dtype": "float32"
+      },
+      {
+        "name": "u_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "u_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "J_soft",
+        "dtype": "float64"
+      },
+      {
+        "name": "binary_pair_state",
+        "dtype": "string"
+      },
+      {
+        "name": "J_soft_interpretation",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "expanded/technical_dependencies.tsv": {
+    "rows": 352,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "covariate",
+        "dtype": "object"
+      },
+      {
+        "name": "n_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "spearman",
+        "dtype": "float64"
+      },
+      {
+        "name": "status",
+        "dtype": "object"
+      },
+      {
+        "name": "interpretation",
+        "dtype": "object"
+      }
+    ]
+  },
+  "gene_harmonization.parquet": {
+    "rows": 795,
+    "columns": [
+      {
+        "name": "native_gene_id",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_symbol",
+        "dtype": "object"
+      },
+      {
+        "name": "status",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/cell_metadata.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "provided_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "input_expression_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "input_detected_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "nUMI",
+        "dtype": "int64"
+      },
+      {
+        "name": "nGenes",
+        "dtype": "int64"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/cell_program_representation.parquet": {
+    "rows": 5280,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "program_id",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_program_score",
+        "dtype": "float64"
+      },
+      {
+        "name": "scoring_method",
+        "dtype": "string"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_version",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_set_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "gene_coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_applicable",
+        "dtype": "bool"
+      },
+      {
+        "name": "continuous_score_eligible",
+        "dtype": "bool"
+      },
+      {
+        "name": "representation_type",
+        "dtype": "string"
+      },
+      {
+        "name": "requested_mode",
+        "dtype": "string"
+      },
+      {
+        "name": "actual_method",
+        "dtype": "string"
+      },
+      {
+        "name": "discrete_or_relative_state",
+        "dtype": "string"
+      },
+      {
+        "name": "state_code",
+        "dtype": "int64"
+      },
+      {
+        "name": "posterior_high",
+        "dtype": "float64"
+      },
+      {
+        "name": "calibration_percentile",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_low",
+        "dtype": "string"
+      },
+      {
+        "name": "threshold_high",
+        "dtype": "string"
+      },
+      {
+        "name": "state_definition",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_id",
+        "dtype": "string"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "string"
+      },
+      {
+        "name": "user_override",
+        "dtype": "bool"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "string"
+      },
+      {
+        "name": "domain_evidence",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "raw_score_for_qc",
+        "dtype": "float32"
+      },
+      {
+        "name": "n_seed_detected",
+        "dtype": "int16"
+      },
+      {
+        "name": "n_seed_measured",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_seed_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "definition_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "measured_subset_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "reason_if_invalid",
+        "dtype": "object"
+      },
+      {
+        "name": "full_original_coverage_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_coverage_interpretation",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/cell_program_scores.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "identity",
+        "dtype": "object"
+      },
+      {
+        "name": "S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "A01",
+        "dtype": "float32"
+      },
+      {
+        "name": "scoring_method",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_version",
+        "dtype": "object"
+      },
+      {
+        "name": "program_version",
+        "dtype": "object"
+      },
+      {
+        "name": "QC_reference",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "raw_score_for_qc__S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_score_for_qc__A01",
+        "dtype": "float32"
+      }
+    ]
+  },
+  "original/detected_members.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "S01",
+        "dtype": "int16"
+      },
+      {
+        "name": "S02",
+        "dtype": "int16"
+      },
+      {
+        "name": "S03",
+        "dtype": "int16"
+      },
+      {
+        "name": "S04",
+        "dtype": "int16"
+      },
+      {
+        "name": "S05",
+        "dtype": "int16"
+      },
+      {
+        "name": "S06",
+        "dtype": "int16"
+      },
+      {
+        "name": "S07",
+        "dtype": "int16"
+      },
+      {
+        "name": "S08",
+        "dtype": "int16"
+      },
+      {
+        "name": "S09",
+        "dtype": "int16"
+      },
+      {
+        "name": "S10",
+        "dtype": "int16"
+      },
+      {
+        "name": "S11",
+        "dtype": "int16"
+      },
+      {
+        "name": "S12",
+        "dtype": "int16"
+      },
+      {
+        "name": "S13",
+        "dtype": "int16"
+      },
+      {
+        "name": "S14",
+        "dtype": "int16"
+      },
+      {
+        "name": "S15",
+        "dtype": "int16"
+      },
+      {
+        "name": "S16",
+        "dtype": "int16"
+      },
+      {
+        "name": "L01",
+        "dtype": "int16"
+      },
+      {
+        "name": "L02",
+        "dtype": "int16"
+      },
+      {
+        "name": "L03",
+        "dtype": "int16"
+      },
+      {
+        "name": "L04",
+        "dtype": "int16"
+      },
+      {
+        "name": "L05",
+        "dtype": "int16"
+      },
+      {
+        "name": "A01",
+        "dtype": "int16"
+      }
+    ]
+  },
+  "original/distribution_model_comparison.tsv": {
+    "rows": 96,
+    "columns": [
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_group",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "blocked_mean_heldout_loglik",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_valid_heldout_blocks",
+        "dtype": "int64"
+      },
+      {
+        "name": "validation_unit",
+        "dtype": "object"
+      },
+      {
+        "name": "name",
+        "dtype": "object"
+      },
+      {
+        "name": "mean",
+        "dtype": "float64"
+      },
+      {
+        "name": "sd",
+        "dtype": "float64"
+      },
+      {
+        "name": "k",
+        "dtype": "int64"
+      },
+      {
+        "name": "valid",
+        "dtype": "bool"
+      },
+      {
+        "name": "outside_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "loglik",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_balanced",
+        "dtype": "int64"
+      },
+      {
+        "name": "aic",
+        "dtype": "float64"
+      },
+      {
+        "name": "bic",
+        "dtype": "float64"
+      },
+      {
+        "name": "parameters",
+        "dtype": "object"
+      },
+      {
+        "name": "fit_warnings",
+        "dtype": "object"
+      },
+      {
+        "name": "means",
+        "dtype": "object"
+      },
+      {
+        "name": "sds",
+        "dtype": "object"
+      },
+      {
+        "name": "weights",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/pairwise_gene_overlap.tsv": {
+    "rows": 120,
+    "columns": [
+      {
+        "name": "pair_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_A",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n",
+        "dtype": "int64"
+      },
+      {
+        "name": "gene_overlap_jaccard",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "shared_genes",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_n_full_definition",
+        "dtype": "float64"
+      },
+      {
+        "name": "overlap_scope",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/program_coverage.tsv": {
+    "rows": 22,
+    "columns": [
+      {
+        "name": "feature_id",
+        "dtype": "object"
+      },
+      {
+        "name": "display_name",
+        "dtype": "object"
+      },
+      {
+        "name": "feature_class",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_set_version",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_set_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "reference_version",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_formula",
+        "dtype": "object"
+      },
+      {
+        "name": "n_reference_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_mapped_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_present_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "mapping_retention",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_policy",
+        "dtype": "object"
+      },
+      {
+        "name": "scoring_eligible",
+        "dtype": "bool"
+      },
+      {
+        "name": "applicability_status",
+        "dtype": "object"
+      },
+      {
+        "name": "median_cell_detected_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "fraction_cells_zero_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "present_genes",
+        "dtype": "object"
+      },
+      {
+        "name": "absent_genes",
+        "dtype": "float64"
+      },
+      {
+        "name": "unmapped_genes",
+        "dtype": "float64"
+      },
+      {
+        "name": "developmental_candidate",
+        "dtype": "bool"
+      },
+      {
+        "name": "construct_validity",
+        "dtype": "object"
+      },
+      {
+        "name": "default_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_limits",
+        "dtype": "object"
+      },
+      {
+        "name": "full_original_coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "measured_subset_size",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "seed3_policy_scope",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/program_representation_decisions.tsv": {
+    "rows": 44,
+    "columns": [
+      {
+        "name": "calibration_group",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "n_finite",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_unique",
+        "dtype": "int64"
+      },
+      {
+        "name": "max_tied_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "boundary_mass",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_min",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_max",
+        "dtype": "float64"
+      },
+      {
+        "name": "score_sd",
+        "dtype": "float64"
+      },
+      {
+        "name": "detection_QC",
+        "dtype": "object"
+      },
+      {
+        "name": "detection_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "basic_QC_pass",
+        "dtype": "bool"
+      },
+      {
+        "name": "basic_QC_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "auto_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "decision_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "partition_evidence",
+        "dtype": "object"
+      },
+      {
+        "name": "unit_level",
+        "dtype": "object"
+      },
+      {
+        "name": "n_calibration_blocks",
+        "dtype": "int64"
+      },
+      {
+        "name": "best_unimodal",
+        "dtype": "object"
+      },
+      {
+        "name": "bic_gain_over_best_unimodal",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_valid_folds",
+        "dtype": "float64"
+      },
+      {
+        "name": "mean_block_loglik_gain",
+        "dtype": "float64"
+      },
+      {
+        "name": "positive_block_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "LOO_shape_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "LOO_min_label_agreement",
+        "dtype": "float64"
+      },
+      {
+        "name": "initialization_min_agreement",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage",
+        "dtype": "float64"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_interpretation",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_reliable",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_reasons",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_separation",
+        "dtype": "float64"
+      },
+      {
+        "name": "gmm_kde_peak_counts",
+        "dtype": "object"
+      },
+      {
+        "name": "gmm_weights",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "method_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/raw_cell_program_scores_for_qc.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "S01",
+        "dtype": "float32"
+      },
+      {
+        "name": "S02",
+        "dtype": "float32"
+      },
+      {
+        "name": "S03",
+        "dtype": "float32"
+      },
+      {
+        "name": "S04",
+        "dtype": "float32"
+      },
+      {
+        "name": "S05",
+        "dtype": "float32"
+      },
+      {
+        "name": "S06",
+        "dtype": "float32"
+      },
+      {
+        "name": "S07",
+        "dtype": "float32"
+      },
+      {
+        "name": "S08",
+        "dtype": "float32"
+      },
+      {
+        "name": "S09",
+        "dtype": "float32"
+      },
+      {
+        "name": "S10",
+        "dtype": "float32"
+      },
+      {
+        "name": "S11",
+        "dtype": "float32"
+      },
+      {
+        "name": "S12",
+        "dtype": "float32"
+      },
+      {
+        "name": "S13",
+        "dtype": "float32"
+      },
+      {
+        "name": "S14",
+        "dtype": "float32"
+      },
+      {
+        "name": "S15",
+        "dtype": "float32"
+      },
+      {
+        "name": "S16",
+        "dtype": "float32"
+      },
+      {
+        "name": "L01",
+        "dtype": "float32"
+      },
+      {
+        "name": "L02",
+        "dtype": "float32"
+      },
+      {
+        "name": "L03",
+        "dtype": "float32"
+      },
+      {
+        "name": "L04",
+        "dtype": "float32"
+      },
+      {
+        "name": "L05",
+        "dtype": "float32"
+      },
+      {
+        "name": "A01",
+        "dtype": "float32"
+      }
+    ]
+  },
+  "original/sample_coupling_statistics.parquet": {
+    "rows": 960,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_A",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B",
+        "dtype": "object"
+      },
+      {
+        "name": "historical_candidate",
+        "dtype": "bool"
+      },
+      {
+        "name": "n11",
+        "dtype": "float64"
+      },
+      {
+        "name": "n10",
+        "dtype": "float64"
+      },
+      {
+        "name": "n01",
+        "dtype": "float64"
+      },
+      {
+        "name": "n00",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "A_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "B_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "joint_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "lift",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuity_correction",
+        "dtype": "float64"
+      },
+      {
+        "name": "raw_OR_status",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "estimability_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_uncertain",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_unassessable",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_continuous",
+        "dtype": "int64"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      },
+      {
+        "name": "spearman",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuous_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_adjusted",
+        "dtype": "int64"
+      },
+      {
+        "name": "covariates_used",
+        "dtype": "object"
+      },
+      {
+        "name": "dropped_covariates",
+        "dtype": "object"
+      },
+      {
+        "name": "activity_adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "activity_adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n",
+        "dtype": "int64"
+      },
+      {
+        "name": "gene_overlap_jaccard",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "shared_genes",
+        "dtype": "object"
+      },
+      {
+        "name": "coverage_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_method",
+        "dtype": "object"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "technical_QC",
+        "dtype": "object"
+      },
+      {
+        "name": "p_value",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_A_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_status",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "method_version",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "object"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "object"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "object"
+      },
+      {
+        "name": "QC_reference",
+        "dtype": "object"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "object"
+      },
+      {
+        "name": "n_target_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_A_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_B_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_pair_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "fraction_pair_valid",
+        "dtype": "float64"
+      },
+      {
+        "name": "failure_reason_distribution",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n_full_definition",
+        "dtype": "float64"
+      },
+      {
+        "name": "overlap_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "n_binary_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "fraction_denominator_policy",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/selected_pair_joint_features.parquet": {
+    "rows": 720,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "condition",
+        "dtype": "string"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "string"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "string"
+      },
+      {
+        "name": "program_A",
+        "dtype": "string"
+      },
+      {
+        "name": "program_B",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_A",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_B",
+        "dtype": "float32"
+      },
+      {
+        "name": "u_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "u_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "J_soft",
+        "dtype": "float64"
+      },
+      {
+        "name": "binary_pair_state",
+        "dtype": "string"
+      },
+      {
+        "name": "J_soft_interpretation",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "original/technical_dependencies.tsv": {
+    "rows": 352,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "covariate",
+        "dtype": "object"
+      },
+      {
+        "name": "n_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "spearman",
+        "dtype": "float64"
+      },
+      {
+        "name": "status",
+        "dtype": "object"
+      },
+      {
+        "name": "interpretation",
+        "dtype": "object"
+      }
+    ]
+  },
+  "program_seed_coverage.tsv": {
+    "rows": 22,
+    "columns": [
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "feature_class",
+        "dtype": "object"
+      },
+      {
+        "name": "original_seed_count",
+        "dtype": "int64"
+      },
+      {
+        "name": "mapped_seed_count",
+        "dtype": "int64"
+      },
+      {
+        "name": "measured_seed_count",
+        "dtype": "int64"
+      },
+      {
+        "name": "absent_seed_count",
+        "dtype": "int64"
+      },
+      {
+        "name": "mapping_loss_count",
+        "dtype": "int64"
+      },
+      {
+        "name": "coverage_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "mapped_coverage_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "exact_measured_members",
+        "dtype": "object"
+      },
+      {
+        "name": "exact_missing_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "exact_unmapped_members",
+        "dtype": "float64"
+      },
+      {
+        "name": "eligibility",
+        "dtype": "object"
+      },
+      {
+        "name": "completeness_status",
+        "dtype": "object"
+      },
+      {
+        "name": "definition_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "original_signature_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "measured_subset_hash",
+        "dtype": "object"
+      }
+    ]
+  },
+  "program_seed_gene_qc.tsv": {
+    "rows": 229,
+    "columns": [
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "original_gene",
+        "dtype": "object"
+      },
+      {
+        "name": "mapped_gene",
+        "dtype": "object"
+      },
+      {
+        "name": "mapping_status",
+        "dtype": "object"
+      },
+      {
+        "name": "measured_in_dataset",
+        "dtype": "bool"
+      },
+      {
+        "name": "measurement_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_cells_detected",
+        "dtype": "int64"
+      },
+      {
+        "name": "fraction_cells_detected",
+        "dtype": "float64"
+      },
+      {
+        "name": "relevant_sample_detection",
+        "dtype": "object"
+      },
+      {
+        "name": "exclusion_reason",
+        "dtype": "float64"
+      }
+    ]
+  },
+  "sample_coupling_statistics.parquet": {
+    "rows": 1920,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "object"
+      },
+      {
+        "name": "program_A",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B",
+        "dtype": "object"
+      },
+      {
+        "name": "historical_candidate",
+        "dtype": "bool"
+      },
+      {
+        "name": "n11",
+        "dtype": "float64"
+      },
+      {
+        "name": "n10",
+        "dtype": "float64"
+      },
+      {
+        "name": "n01",
+        "dtype": "float64"
+      },
+      {
+        "name": "n00",
+        "dtype": "float64"
+      },
+      {
+        "name": "n_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "A_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "B_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "joint_fraction",
+        "dtype": "float64"
+      },
+      {
+        "name": "lift",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR_raw",
+        "dtype": "float64"
+      },
+      {
+        "name": "OR",
+        "dtype": "float64"
+      },
+      {
+        "name": "logOR",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuity_correction",
+        "dtype": "float64"
+      },
+      {
+        "name": "raw_OR_status",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "estimability_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_uncertain",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_unassessable",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_continuous",
+        "dtype": "int64"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      },
+      {
+        "name": "spearman",
+        "dtype": "float64"
+      },
+      {
+        "name": "continuous_estimable",
+        "dtype": "bool"
+      },
+      {
+        "name": "adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "n_adjusted",
+        "dtype": "int64"
+      },
+      {
+        "name": "covariates_used",
+        "dtype": "object"
+      },
+      {
+        "name": "dropped_covariates",
+        "dtype": "object"
+      },
+      {
+        "name": "activity_adjusted_association",
+        "dtype": "float64"
+      },
+      {
+        "name": "activity_adjustment_status",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n",
+        "dtype": "int64"
+      },
+      {
+        "name": "gene_overlap_jaccard",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "gene_overlap_fraction_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "shared_genes",
+        "dtype": "object"
+      },
+      {
+        "name": "coverage_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "coverage_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "threshold_method",
+        "dtype": "object"
+      },
+      {
+        "name": "score_namespace",
+        "dtype": "object"
+      },
+      {
+        "name": "technical_QC",
+        "dtype": "object"
+      },
+      {
+        "name": "p_value",
+        "dtype": "float64"
+      },
+      {
+        "name": "program_A_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "program_B_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "pair_representation",
+        "dtype": "object"
+      },
+      {
+        "name": "binary_status",
+        "dtype": "object"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "object"
+      },
+      {
+        "name": "method_version",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_evidence",
+        "dtype": "object"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "object"
+      },
+      {
+        "name": "analysis_unit",
+        "dtype": "object"
+      },
+      {
+        "name": "QC_reference",
+        "dtype": "object"
+      },
+      {
+        "name": "evidence_level",
+        "dtype": "object"
+      },
+      {
+        "name": "n_target_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_A_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_B_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_pair_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "fraction_pair_valid",
+        "dtype": "float64"
+      },
+      {
+        "name": "failure_reason_distribution",
+        "dtype": "object"
+      },
+      {
+        "name": "gene_overlap_n_full_definition",
+        "dtype": "float64"
+      },
+      {
+        "name": "overlap_scope",
+        "dtype": "object"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "n_binary_evaluable",
+        "dtype": "float64"
+      },
+      {
+        "name": "fraction_denominator_policy",
+        "dtype": "object"
+      }
+    ]
+  },
+  "score_eligibility_by_sample.tsv": {
+    "rows": 352,
+    "columns": [
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      },
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "n_target_cells",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "fraction_valid",
+        "dtype": "float64"
+      }
+    ]
+  },
+  "scoring_version_comparison.tsv": {
+    "rows": 22,
+    "columns": [
+      {
+        "name": "program_id",
+        "dtype": "object"
+      },
+      {
+        "name": "n_original_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_expanded_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "n_both_valid",
+        "dtype": "int64"
+      },
+      {
+        "name": "rank_association_within_query",
+        "dtype": "float64"
+      },
+      {
+        "name": "raw_score_difference_as_biological_effect",
+        "dtype": "object"
+      }
+    ]
+  },
+  "seed_cell_index.parquet": {
+    "rows": 240,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "object"
+      },
+      {
+        "name": "provided_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "study_id",
+        "dtype": "object"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "object"
+      },
+      {
+        "name": "tissue",
+        "dtype": "object"
+      },
+      {
+        "name": "condition",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "object"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "object"
+      },
+      {
+        "name": "species",
+        "dtype": "object"
+      },
+      {
+        "name": "modality",
+        "dtype": "object"
+      },
+      {
+        "name": "input_expression_total",
+        "dtype": "int64"
+      },
+      {
+        "name": "input_detected_genes",
+        "dtype": "int64"
+      },
+      {
+        "name": "nUMI",
+        "dtype": "int64"
+      },
+      {
+        "name": "nGenes",
+        "dtype": "int64"
+      },
+      {
+        "name": "batch",
+        "dtype": "object"
+      }
+    ]
+  },
+  "selected_pair_joint_features.parquet": {
+    "rows": 1440,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "string"
+      },
+      {
+        "name": "sample_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_id",
+        "dtype": "string"
+      },
+      {
+        "name": "biological_unit_confirmed",
+        "dtype": "bool"
+      },
+      {
+        "name": "condition",
+        "dtype": "string"
+      },
+      {
+        "name": "source_block_id",
+        "dtype": "string"
+      },
+      {
+        "name": "pair_id",
+        "dtype": "string"
+      },
+      {
+        "name": "program_A",
+        "dtype": "string"
+      },
+      {
+        "name": "program_B",
+        "dtype": "string"
+      },
+      {
+        "name": "raw_A",
+        "dtype": "float32"
+      },
+      {
+        "name": "raw_B",
+        "dtype": "float32"
+      },
+      {
+        "name": "u_A",
+        "dtype": "float64"
+      },
+      {
+        "name": "u_B",
+        "dtype": "float64"
+      },
+      {
+        "name": "J_soft",
+        "dtype": "float64"
+      },
+      {
+        "name": "binary_pair_state",
+        "dtype": "string"
+      },
+      {
+        "name": "J_soft_interpretation",
+        "dtype": "string"
+      },
+      {
+        "name": "calibration_scope",
+        "dtype": "string"
+      },
+      {
+        "name": "model_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "parameter_hash",
+        "dtype": "string"
+      },
+      {
+        "name": "method_version",
+        "dtype": "string"
+      },
+      {
+        "name": "coarse_identity",
+        "dtype": "string"
+      },
+      {
+        "name": "QC",
+        "dtype": "string"
+      },
+      {
+        "name": "input_modality",
+        "dtype": "string"
+      },
+      {
+        "name": "signature_version",
+        "dtype": "object"
+      }
+    ]
+  },
+  "selection_audit.parquet": {
+    "rows": 256,
+    "columns": [
+      {
+        "name": "cell_id",
+        "dtype": "object"
+      },
+      {
+        "name": "original_annotation",
+        "dtype": "object"
+      },
+      {
+        "name": "selected",
+        "dtype": "bool"
+      },
+      {
+        "name": "selection_reason",
+        "dtype": "object"
+      }
+    ]
+  }
+}

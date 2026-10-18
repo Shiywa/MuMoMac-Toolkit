@@ -1,0 +1,18 @@
+check	status	count	evidence	detail
+inherited_C1	PASS	37	INHERITED_C1_REGRESSION.log	Original tests and assertions unchanged; private real fixtures retained internally
+inherited_C2	PASS	28	INHERITED_C2_REGRESSION.log	Original tests and assertions unchanged; private real fixtures retained internally
+inherited_C2_1	PASS	33	INHERITED_C2_1_REGRESSION.log	Original tests and assertions unchanged; private real fixtures retained internally
+inherited_C3	PASS	57	INHERITED_C3_REGRESSION.log	Original tests and assertions unchanged; private real fixtures retained internally
+inherited_C3_1	PASS	34	INHERITED_C3_1_REGRESSION.log	Original tests and assertions unchanged; private real fixtures retained internally
+portable_attempt1	FAIL_RETAINED	78	EXTERNAL_WHEEL_PORTABLE_TESTS.log	77 passed; one new harness test erroneously called cache_clear on an uncached function; no scorer failure
+portable_corrected	PASS	78	PORTABLE_REGRESSION_ATTEMPT2.log	Only the new harness cache call removed; inherited assertions unchanged
+PARITY_RESULT	PASS	2059	PARITY_RESULT.json	Exact values and NA masks; no numerical tolerance changes
+HUMAN_NUMERIC_PARITY	PASS	13	HUMAN_NUMERIC_PARITY.json	Exact human numerical/NA/coverage parity. Human mapping digest changes because the inherited adapter hashes a manifest whose private source-path fields were sanitized; mapping tables are unchanged. Historical score-run hash compatibility is not asserted.
+fresh_wheel_external_CLI	PASS	10	EXTERNAL_WHEEL.json	No editable install/PYTHONPATH/system-site-packages; public PyPI dependencies; Both, independent modes and replay
+fresh_sdist_external_CLI	PASS	10	EXTERNAL_SDIST.json	No editable install/PYTHONPATH/system-site-packages; public PyPI dependencies; Both, independent modes and replay
+CLI_contract_and_errors	PASS	14	CLI_CONTRACT.json	3 help checks and 11 malformed-input cases; actual CLI exits with status 2 and descriptive messages
+GitHub_Actions	NOT_RUN	0		No certification or passing badge asserted
+anonymous_tag_install	NOT_RUN	0		No certification or passing badge asserted
+Windows	NOT_RUN	0		No certification or passing badge asserted
+macOS	NOT_RUN	0		No certification or passing badge asserted
+million_cell_scale	NOT_RUN	0		No certification or passing badge asserted

@@ -1,0 +1,27 @@
+{
+  "identities": [
+    "Adipose perivascular macrophage-like",
+    "Alveolar macrophage",
+    "Bladder macrophage",
+    "Bone-marrow macrophage",
+    "CNS border-associated macrophage",
+    "Classical monocyte",
+    "Dermal macrophage-like",
+    "Kidney-resident-like macrophage",
+    "Kupffer cell",
+    "Large cavity macrophage",
+    "Lung interstitial macrophage-like",
+    "Macrophage, tissue specialization unresolved",
+    "Mature intestinal macrophage",
+    "Microglia",
+    "Nonclassical monocyte",
+    "Pancreatic macrophage",
+    "Small/inflammatory cavity macrophage",
+    "Splenic macrophage"
+  ],
+  "display_mapping": {
+    "Macrophage, tissue specialization unresolved": "Cross-tissue shared macrophages"
+  },
+  "classifier_available": false,
+  "unknown_allowed": true
+}
